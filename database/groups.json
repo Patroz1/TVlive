@@ -1,0 +1,16 @@
+{
+  "nazionali": "01 | Nazionali",
+  "rai": "02 | Rai",
+  "mediaset": "03 | Mediaset",
+  "discovery": "04 | Warner Discovery",
+  "sky": "05 | Sky Free",
+  "news": "06 | News",
+  "sport": "07 | Sport",
+  "bambini": "08 | Bambini",
+  "radio": "09 | Radio / Musica",
+  "cultura": "10 | Cultura / Documentari",
+  "regionali": "11 | Regionali",
+  "fast": "12 | FAST / Streaming",
+  "revisionare": "90 | Da revisionare",
+  "archivio": "99 | Archivio"
+}
