@@ -1,0 +1,762 @@
+{
+  "3B METEO": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "3B METEO",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "ADRENALINE MOVIES": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "ADRENALINE MOVIES",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Boing": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Boing",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "BRIVIDI CINEMA": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "BRIVIDI CINEMA",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Canale 5": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Canale 5",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Cartoonito": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Cartoonito",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "CHILI ALTA TENSIONE": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "CHILI ALTA TENSIONE",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "CHILI FILM SMILE": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "CHILI FILM SMILE",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "CHILI INDIMENTICABILI": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "CHILI INDIMENTICABILI",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Cielo": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Cielo",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Cine 34": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Cine 34",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Cine Malizia": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Cine Malizia",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Cine Paura": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Cine Paura",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Cine Thriller": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Cine Thriller",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Crime Time": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Crime Time",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Deejay TV": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Deejay TV",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Discovery Channel": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Discovery Channel",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Discovery Turbo": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Discovery Turbo",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "DMAX": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "DMAX",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Duri a Morire": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Duri a Morire",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Elisa Di Rivombrosa": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Elisa Di Rivombrosa",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Focus": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Focus",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Food Network": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Food Network",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Frisbee": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Frisbee",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Gambero Rosso": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Gambero Rosso",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "GF Regia 1": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "GF Regia 1",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "GF Regia 2": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "GF Regia 2",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "GF Un'ora fa": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "GF Un'ora fa",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Giallo": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Giallo",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Gli Immortali": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Gli Immortali",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "HGTV - Home&Garden": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "HGTV - Home&Garden",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Iris": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Iris",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Italia 1": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Italia 1",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Italia 2": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Italia 2",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "K2": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "K2",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "La 5": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "La 5",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "LA7": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "LA7",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "LA7 Cinema": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "LA7 Cinema",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Med. Extra": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Med. Extra",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "NOVE": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "NOVE",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "R101": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "R101",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Radio 105": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Radio 105",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Radio KissKiss": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Radio KissKiss",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Radio Number One": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Radio Number One",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Rai 1": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai 1",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Rai 2": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai 2",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Rai 3": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai 3",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Rai 4": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai 4",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Rai 4K (HbbTV)": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai 4K (HbbTV)",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Rai 5": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai 5",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Rai Gulp": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai Gulp",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Rai Movie": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai Movie",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Rai News 24": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai News 24",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Rai Premium": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai Premium",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Rai Scuola": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai Scuola",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Rai Sport + HD": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai Sport + HD",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Rai Storia": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai Storia",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Rai Yoyo": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rai Yoyo",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "RAKUTEN COMMEDIA": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "RAKUTEN COMMEDIA",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "RAKUTEN FAMILY": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "RAKUTEN FAMILY",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "RAKUTEN FANTASCIENZA": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "RAKUTEN FANTASCIENZA",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "RAKUTEN ROMANZI": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "RAKUTEN ROMANZI",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "RAKUTEN TV AZIONE": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "RAKUTEN TV AZIONE",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "RAKUTEN TV DRAMMA": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "RAKUTEN TV DRAMMA",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "RDS": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "RDS",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Real Time": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Real Time",
+    "logo": null,
+    "duplicates_in_source": 3,
+    "notes": ""
+  },
+  "Rete 4": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Rete 4",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "RTL 102.5": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "RTL 102.5",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Sky TG24": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Sky TG24",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "STORIE CRIMINALI": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "STORIE CRIMINALI",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "Supercinema San Valentino": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Supercinema San Valentino",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  },
+  "TG COM 24": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "TG COM 24",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "TOPcrime": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "TOPcrime",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "TV8": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "TV8",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Twenty Seven": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Twenty Seven",
+    "logo": null,
+    "duplicates_in_source": 2,
+    "notes": ""
+  },
+  "Western Time": {
+    "enabled": true,
+    "lcn": null,
+    "group": null,
+    "tvg_id": null,
+    "tvg_name": "Western Time",
+    "logo": null,
+    "duplicates_in_source": 1,
+    "notes": ""
+  }
+}
