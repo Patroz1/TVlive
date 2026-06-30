@@ -1,0 +1,458 @@
+{
+  "3B METEO": {
+    "source_names": [
+      "3B METEO"
+    ],
+    "duplicates_in_source": 2
+  },
+  "ADRENALINE MOVIES": {
+    "source_names": [
+      "ADRENALINE MOVIES"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Boing": {
+    "source_names": [
+      "Boing"
+    ],
+    "duplicates_in_source": 1
+  },
+  "BRIVIDI CINEMA": {
+    "source_names": [
+      "BRIVIDI CINEMA"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Canale 5": {
+    "source_names": [
+      "Canale 5"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Cartoonito": {
+    "source_names": [
+      "Cartoonito"
+    ],
+    "duplicates_in_source": 1
+  },
+  "CHILI ALTA TENSIONE": {
+    "source_names": [
+      "CHILI ALTA TENSIONE"
+    ],
+    "duplicates_in_source": 1
+  },
+  "CHILI FILM SMILE": {
+    "source_names": [
+      "CHILI FILM SMILE"
+    ],
+    "duplicates_in_source": 1
+  },
+  "CHILI INDIMENTICABILI": {
+    "source_names": [
+      "CHILI INDIMENTICABILI"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Cielo": {
+    "source_names": [
+      "Cielo"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Cine 34": {
+    "source_names": [
+      "Cine 34"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Cine Malizia": {
+    "source_names": [
+      "Cine Malizia"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Cine Paura": {
+    "source_names": [
+      "Cine Paura"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Cine Thriller": {
+    "source_names": [
+      "Cine Thriller"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Crime Time": {
+    "source_names": [
+      "Crime Time"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Deejay TV": {
+    "source_names": [
+      "Deejay TV"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Discovery Channel": {
+    "source_names": [
+      "Discovery Channel"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Discovery Turbo": {
+    "source_names": [
+      "Discovery Turbo"
+    ],
+    "duplicates_in_source": 2
+  },
+  "DMAX": {
+    "source_names": [
+      "DMAX"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Duri a Morire": {
+    "source_names": [
+      "Duri a Morire"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Elisa Di Rivombrosa": {
+    "source_names": [
+      "Elisa Di Rivombrosa"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Focus": {
+    "source_names": [
+      "Focus"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Food Network": {
+    "source_names": [
+      "Food Network"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Frisbee": {
+    "source_names": [
+      "Frisbee"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Gambero Rosso": {
+    "source_names": [
+      "Gambero Rosso"
+    ],
+    "duplicates_in_source": 2
+  },
+  "GF Regia 1": {
+    "source_names": [
+      "GF Regia 1"
+    ],
+    "duplicates_in_source": 1
+  },
+  "GF Regia 2": {
+    "source_names": [
+      "GF Regia 2"
+    ],
+    "duplicates_in_source": 1
+  },
+  "GF Un'ora fa": {
+    "source_names": [
+      "GF Un'ora fa"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Giallo": {
+    "source_names": [
+      "Giallo"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Gli Immortali": {
+    "source_names": [
+      "Gli Immortali"
+    ],
+    "duplicates_in_source": 1
+  },
+  "HGTV - Home&Garden": {
+    "source_names": [
+      "HGTV - Home&Garden"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Iris": {
+    "source_names": [
+      "Iris"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Italia 1": {
+    "source_names": [
+      "Italia 1"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Italia 2": {
+    "source_names": [
+      "Italia 2"
+    ],
+    "duplicates_in_source": 1
+  },
+  "K2": {
+    "source_names": [
+      "K2"
+    ],
+    "duplicates_in_source": 1
+  },
+  "La 5": {
+    "source_names": [
+      "La 5"
+    ],
+    "duplicates_in_source": 1
+  },
+  "LA7": {
+    "source_names": [
+      "LA7"
+    ],
+    "duplicates_in_source": 2
+  },
+  "LA7 Cinema": {
+    "source_names": [
+      "LA7 Cinema"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Med. Extra": {
+    "source_names": [
+      "Med. Extra"
+    ],
+    "duplicates_in_source": 1
+  },
+  "NOVE": {
+    "source_names": [
+      "NOVE"
+    ],
+    "duplicates_in_source": 2
+  },
+  "R101": {
+    "source_names": [
+      "R101"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Radio 105": {
+    "source_names": [
+      "Radio 105"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Radio KissKiss": {
+    "source_names": [
+      "Radio KissKiss"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Radio Number One": {
+    "source_names": [
+      "Radio Number One"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Rai 1": {
+    "source_names": [
+      "Rai 1"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Rai 2": {
+    "source_names": [
+      "Rai 2"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Rai 3": {
+    "source_names": [
+      "Rai 3"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Rai 4": {
+    "source_names": [
+      "Rai 4"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Rai 4K (HbbTV)": {
+    "source_names": [
+      "Rai 4K (HbbTV)"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Rai 5": {
+    "source_names": [
+      "Rai 5"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Rai Gulp": {
+    "source_names": [
+      "Rai Gulp"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Rai Movie": {
+    "source_names": [
+      "Rai Movie"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Rai News 24": {
+    "source_names": [
+      "Rai News 24"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Rai Premium": {
+    "source_names": [
+      "Rai Premium"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Rai Scuola": {
+    "source_names": [
+      "Rai Scuola"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Rai Sport + HD": {
+    "source_names": [
+      "Rai Sport + HD"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Rai Storia": {
+    "source_names": [
+      "Rai Storia"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Rai Yoyo": {
+    "source_names": [
+      "Rai Yoyo"
+    ],
+    "duplicates_in_source": 1
+  },
+  "RAKUTEN COMMEDIA": {
+    "source_names": [
+      "RAKUTEN COMMEDIA"
+    ],
+    "duplicates_in_source": 1
+  },
+  "RAKUTEN FAMILY": {
+    "source_names": [
+      "RAKUTEN FAMILY"
+    ],
+    "duplicates_in_source": 1
+  },
+  "RAKUTEN FANTASCIENZA": {
+    "source_names": [
+      "RAKUTEN FANTASCIENZA"
+    ],
+    "duplicates_in_source": 1
+  },
+  "RAKUTEN ROMANZI": {
+    "source_names": [
+      "RAKUTEN ROMANZI"
+    ],
+    "duplicates_in_source": 1
+  },
+  "RAKUTEN TV AZIONE": {
+    "source_names": [
+      "RAKUTEN TV AZIONE"
+    ],
+    "duplicates_in_source": 1
+  },
+  "RAKUTEN TV DRAMMA": {
+    "source_names": [
+      "RAKUTEN TV DRAMMA"
+    ],
+    "duplicates_in_source": 1
+  },
+  "RDS": {
+    "source_names": [
+      "RDS"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Real Time": {
+    "source_names": [
+      "Real Time"
+    ],
+    "duplicates_in_source": 3
+  },
+  "Rete 4": {
+    "source_names": [
+      "Rete 4"
+    ],
+    "duplicates_in_source": 2
+  },
+  "RTL 102.5": {
+    "source_names": [
+      "RTL 102.5"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Sky TG24": {
+    "source_names": [
+      "Sky TG24"
+    ],
+    "duplicates_in_source": 2
+  },
+  "STORIE CRIMINALI": {
+    "source_names": [
+      "STORIE CRIMINALI"
+    ],
+    "duplicates_in_source": 1
+  },
+  "Supercinema San Valentino": {
+    "source_names": [
+      "Supercinema San Valentino"
+    ],
+    "duplicates_in_source": 1
+  },
+  "TG COM 24": {
+    "source_names": [
+      "TG COM 24"
+    ],
+    "duplicates_in_source": 2
+  },
+  "TOPcrime": {
+    "source_names": [
+      "TOPcrime"
+    ],
+    "duplicates_in_source": 2
+  },
+  "TV8": {
+    "source_names": [
+      "TV8"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Twenty Seven": {
+    "source_names": [
+      "Twenty Seven"
+    ],
+    "duplicates_in_source": 2
+  },
+  "Western Time": {
+    "source_names": [
+      "Western Time"
+    ],
+    "duplicates_in_source": 1
+  }
+}
