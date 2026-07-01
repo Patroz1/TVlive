@@ -9,6 +9,21 @@ from common import (
 )
 
 
+WLTV_DISCOVERY_CHANNELS = {
+    "NOVE": "Nove",
+    "Nove": "Nove",
+    "Real Time": "RealTime",
+    "Discovery Channel": "Discovery",
+    "DMAX": "DMAX",
+    "Giallo": "Giallo",
+    "Discovery Turbo": "Turbo",
+    "Motor Trend": "Turbo",
+    "HGTV": "HGTV",
+    "HGTV - Home&Garden": "HGTV",
+    "Food Network": "FoodNetwork",
+}
+
+
 def extract_channel_name(extinf_line):
     if "," not in extinf_line:
         return ""
@@ -122,6 +137,15 @@ def build_extinf(name, data):
     return "#EXTINF:-1 " + " ".join(attributes) + "," + name
 
 
+def is_wltv_discovery_channel(name):
+    return name in WLTV_DISCOVERY_CHANNELS
+
+
+def build_wltv_discovery_url(name):
+    channel = WLTV_DISCOVERY_CHANNELS[name]
+    return f"plugin://plugin.video.wltvhelper/play/discovery/{channel}"
+
+
 def generate_playlist():
     source_lines = read_lines(SOURCE_PLAYLIST)
     catalog = read_json(CATALOG_JSON)
@@ -136,11 +160,22 @@ def generate_playlist():
         "missing_source": [],
         "disabled": [],
         "without_playable_url": [],
+        "wltv_discovery_channels": [],
     }
 
     for name, data in sorted(catalog.items(), key=sort_key):
         if not data.get("enabled", True):
             stats["disabled"].append(name)
+            continue
+
+        if is_wltv_discovery_channel(name):
+            output_lines.append("")
+            output_lines.append(build_extinf(name, data))
+            output_lines.append(build_wltv_discovery_url(name))
+
+            stats["written_channels"] += 1
+            stats["playable_channels"].append(name)
+            stats["wltv_discovery_channels"].append(name)
             continue
 
         aliases = data.get("aliases", [])
@@ -195,7 +230,9 @@ def main():
     print(f"Canali disabilitati: {len(stats['disabled'])}")
     print(f"Canali senza sorgente: {len(stats['missing_source'])}")
     print(f"Canali senza URL attivo: {len(stats['without_playable_url'])}")
+    print(f"Canali Discovery via WLTV: {len(stats['wltv_discovery_channels'])}")
 
+    print_list("Discovery via WLTV:", stats["wltv_discovery_channels"])
     print_list("Senza sorgente:", stats["missing_source"])
     print_list("Senza URL attivo:", stats["without_playable_url"])
 

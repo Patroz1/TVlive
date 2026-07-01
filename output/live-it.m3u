@@ -28,9 +28,7 @@ https://jmp2.uk/stvp-ITBD1500002NL
 https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
 
 #EXTINF:-1 tvg-id="Nove.it" tvg-name="NOVE" tvg-chno="9" tvg-logo="logos/discovery/nove.png" group-title="01 | Nazionali",NOVE
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://d54or4x1qhv8g.cloudfront.net/drm/v2/license?drm-type=widevine
-https://d3pkcyie9gav9y.cloudfront.net/out/v1/fdb9d129ff7f4a7bbc8fe0902122e48f/HLS_CMAF_DRM/index.m3u8
+plugin://plugin.video.wltvhelper/play/discovery/Nove
 
 #EXTINF:-1 tvg-id="Rai4.it" tvg-name="Rai 4" tvg-chno="21" tvg-logo="logos/rai/rai-4.png" group-title="02 | Rai",Rai 4
 #EXTVLCOPT:http-user-agent=HbbTV/1.6.1
@@ -77,36 +75,25 @@ https://live02-seg.msf.cdn.mediaset.net/live/ch-i2/i2-clr.isml/index.m3u8
 https://live02-seg.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/index.m3u8
 
 #EXTINF:-1 tvg-id="RealTime.it" tvg-name="Real Time" tvg-chno="31" tvg-logo="logos/discovery/real-time.png" group-title="04 | Warner Discovery",Real Time
-#EXT2-X-DRM:https://d54or4x1qhv8g.cloudfront.net/drm/v2/license?drm-type=widevine
-https://d2op4s24rubfe0.cloudfront.net/out/v1/54acbe71ddae4c9986c03fad1352bc84/HLS_CMAF_DRM/index.m3u8
+plugin://plugin.video.wltvhelper/play/discovery/RealTime
 
 #EXTINF:-1 tvg-id="FoodNetwork.it" tvg-name="Food Network" tvg-chno="33" tvg-logo="logos/discovery/food-network.png" group-title="04 | Warner Discovery",Food Network
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://d54or4x1qhv8g.cloudfront.net/drm/v2/license?drm-type=widevine
-https://d9kc4bu8iry3b.cloudfront.net/out/v1/dcecf7d9fd2b49c59e85a65016ddc255/HLS_CMAF_DRM/index.m3u8
+plugin://plugin.video.wltvhelper/play/discovery/FoodNetwork
 
 #EXTINF:-1 tvg-id="Giallo.it" tvg-name="Giallo" tvg-chno="38" tvg-logo="logos/discovery/giallo.png" group-title="04 | Warner Discovery",Giallo
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://d54or4x1qhv8g.cloudfront.net/drm/v2/license?drm-type=widevine
-https://d2iz84wnbtnuey.cloudfront.net/out/v1/8a939414e62c460a9ccab7b699ed1106/HLS_CMAF_DRM/index.m3u8
+plugin://plugin.video.wltvhelper/play/discovery/Giallo
 
 #EXTINF:-1 tvg-id="DMAX.it" tvg-name="DMAX" tvg-chno="52" tvg-logo="logos/discovery/dmax.png" group-title="04 | Warner Discovery",DMAX
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://d54or4x1qhv8g.cloudfront.net/drm/v2/license?drm-type=widevine
-https://d24suwc4j2wvyy.cloudfront.net/out/v1/1ef9705b7c534751889b6e01bb032f80/HLS_CMAF_DRM/index.m3u8
+plugin://plugin.video.wltvhelper/play/discovery/DMAX
 
 #EXTINF:-1 tvg-id="HGTV.it" tvg-name="HGTV - Home&Garden" tvg-chno="56" tvg-logo="logos/discovery/hgtv.png" group-title="04 | Warner Discovery",HGTV - Home&Garden
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://d54or4x1qhv8g.cloudfront.net/drm/v2/license?drm-type=widevine
-https://d21emhonubg8zy.cloudfront.net/out/v1/063d830ad098456e8c76bd198dea0122/HLS_CMAF_DRM/index.m3u8
+plugin://plugin.video.wltvhelper/play/discovery/HGTV
 
 #EXTINF:-1 tvg-id="DiscoveryChannel.it" tvg-name="Discovery Channel" tvg-logo="logos/discovery/discovery-channel.png" group-title="04 | Warner Discovery",Discovery Channel
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://d54or4x1qhv8g.cloudfront.net/drm/v2/license?drm-type=widevine
-https://d3a5c87efixjp8.cloudfront.net/out/v1/12837340dbdf42f2b13481a5ca6f80b2/HLS_CMAF_DRM/index.m3u8
+plugin://plugin.video.wltvhelper/play/discovery/Discovery
 
 #EXTINF:-1 tvg-id="DiscoveryTurbo.it" tvg-name="Discovery Turbo" tvg-logo="logos/discovery/discovery-turbo.png" group-title="04 | Warner Discovery",Discovery Turbo
-#https://jmp2.uk/stvp-IT900004Y5
+plugin://plugin.video.wltvhelper/play/discovery/Turbo
 
 #EXTINF:-1 tvg-id="Cielo.it" tvg-name="Cielo" tvg-chno="26" tvg-logo="logos/sky/cielo.png" group-title="05 | Sky",Cielo
 https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
