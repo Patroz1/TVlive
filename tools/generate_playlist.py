@@ -13,6 +13,34 @@ GITHUB_RAW_BASE_URL = "https://raw.githubusercontent.com/Patroz1/TVlive/main/"
 EPG_URL = GITHUB_RAW_BASE_URL + "epg/epg.xml.gz"
 
 
+EPG_ID_OVERRIDES = {
+    "TV8.it": "TV8.HD.it",
+    "Cielo.it": "cielo.it",
+    "SkyTG24.it": "Sky.TG24.it",
+    "La7.it": "LA7.HD.it",
+    "La5.it": "La.5.it",
+    "TwentySeven.it": "27.Twentyseven.it",
+    "GamberoRosso.it": "Gambero.Rosso.HD.it",
+    "RTL1025.it": "RTL.102.5.HD.it",
+    "DeejayTV.it": "Deejay.TV.it",
+    "Radio105.it": "Radio.105.it",
+    "R101.it": "R101tv.it",
+    "RealTime.it": "Real.Time.it",
+    "TopCrime.it": "Top.Crime.it",
+    "TgCom24.it": "TGCom.it",
+    "MediasetExtra.it": "Mediaset.Extra.it",
+    "Italia2.it": "Italia.2.it",
+    "Cine34.it": "Cine34.it",
+    "Rete4.it": "Rete.4.it",
+    "Italia1.it": "Italia.1.it",
+    "Canale5.it": "Canale.5.it",
+    "Giallo.it": "Giallo.TV.it",
+    "FoodNetwork.it": "Food.Network.it",
+    "DiscoveryChannel.it": "Discovery.Channel.it",
+    "DiscoveryTurbo.it": "",
+}
+
+
 WLTV_DISCOVERY_CHANNELS = {
     "NOVE": "Nove",
     "Nove": "Nove",
@@ -128,8 +156,13 @@ def build_logo_url(logo_path):
     return GITHUB_RAW_BASE_URL + logo_path.lstrip("/")
 
 
+def get_playlist_epg_id(data, name):
+    epg_id = data.get("epg") or name
+    return EPG_ID_OVERRIDES.get(epg_id, epg_id)
+
+
 def build_extinf(name, data):
-    tvg_id = data.get("epg") or name
+    tvg_id = get_playlist_epg_id(data, name)
     tvg_name = name
     tvg_logo = build_logo_url(data.get("logo") or "")
     group = data.get("group") or "99 | Archivio"
