@@ -8,6 +8,7 @@ PYTHON = sys.executable
 STEPS = [
     ("Estrazione canali", "tools/extract_channels.py"),
     ("Normalizzazione nomi", "tools/normalize_names.py"),
+    ("Generazione catalogo", "tools/generate_catalog.py"),
     ("Analisi playlist", "tools/analyze_playlist.py"),
 ]
 
