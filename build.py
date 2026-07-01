@@ -9,6 +9,7 @@ STEPS = [
     ("Estrazione canali", "tools/extract_channels.py"),
     ("Normalizzazione nomi", "tools/normalize_names.py"),
     ("Generazione catalogo", "tools/generate_catalog.py"),
+    ("Generazione playlist", "tools/generate_playlist.py"),
     ("Analisi playlist", "tools/analyze_playlist.py"),
 ]
 

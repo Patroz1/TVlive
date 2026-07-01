@@ -1,7 +1,6 @@
 import json
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 
 SOURCE_PLAYLIST = ROOT / "source" / "live-it-source.m3u"
@@ -9,6 +8,7 @@ SOURCE_PLAYLIST = ROOT / "source" / "live-it-source.m3u"
 DATABASE_DIR = ROOT / "database"
 CHANNELS_JSON = DATABASE_DIR / "channels.json"
 ALIASES_JSON = DATABASE_DIR / "aliases.json"
+CATALOG_JSON = DATABASE_DIR / "catalog.json"
 NORMALIZED_CHANNELS_JSON = DATABASE_DIR / "normalized_channels.json"
 
 OUTPUT_DIR = ROOT / "output"
