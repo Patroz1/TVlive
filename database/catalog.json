@@ -3,59 +3,73 @@
     "aliases": [
       "3B METEO"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "3B Meteo",
+    "group": "06 | News",
     "lcn": null,
-    "epg": "",
-    "logo": "",
+    "epg": "3BMeteo.it",
+    "logo": "logos/varie/3b-meteo.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "3B METEO",
+      "duplicates_in_source": 2
+    }
   },
   "ADRENALINE MOVIES": {
     "aliases": [
       "ADRENALINE MOVIES"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "FAST",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/adrenaline-movies.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "ADRENALINE MOVIES",
+      "duplicates_in_source": 1
+    }
   },
   "Boing": {
     "aliases": [
       "Boing"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Mediaset",
+    "group": "08 | Bambini",
+    "lcn": 40,
+    "epg": "Boing.it",
+    "logo": "logos/mediaset/boing.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Boing",
+      "duplicates_in_source": 1
+    }
   },
   "BRIVIDI CINEMA": {
     "aliases": [
       "BRIVIDI CINEMA"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "FAST",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/brividi-cinema.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "BRIVIDI CINEMA",
+      "duplicates_in_source": 1
+    }
   },
   "Canale 5": {
     "aliases": [
-      "Canale 5",
-      "Canale5",
-      "CANALE 5"
+      "Canale 5"
     ],
     "provider": "Mediaset",
     "group": "01 | Nazionali",
@@ -64,202 +78,266 @@
     "logo": "logos/mediaset/canale-5.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Canale 5",
+      "duplicates_in_source": 2
+    }
   },
   "Cartoonito": {
     "aliases": [
       "Cartoonito"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Mediaset",
+    "group": "08 | Bambini",
+    "lcn": 46,
+    "epg": "Cartoonito.it",
+    "logo": "logos/mediaset/cartoonito.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Cartoonito",
+      "duplicates_in_source": 1
+    }
   },
   "CHILI ALTA TENSIONE": {
     "aliases": [
       "CHILI ALTA TENSIONE"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "CHILI",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/chili-alta-tensione.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "CHILI ALTA TENSIONE",
+      "duplicates_in_source": 1
+    }
   },
   "CHILI FILM SMILE": {
     "aliases": [
       "CHILI FILM SMILE"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "CHILI",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/chili-film-smile.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "CHILI FILM SMILE",
+      "duplicates_in_source": 1
+    }
   },
   "CHILI INDIMENTICABILI": {
     "aliases": [
       "CHILI INDIMENTICABILI"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "CHILI",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/chili-indimenticabili.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "CHILI INDIMENTICABILI",
+      "duplicates_in_source": 1
+    }
   },
   "Cielo": {
     "aliases": [
       "Cielo"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Sky",
+    "group": "05 | Sky",
+    "lcn": 26,
+    "epg": "Cielo.it",
+    "logo": "logos/sky/cielo.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Cielo",
+      "duplicates_in_source": 2
+    }
   },
   "Cine 34": {
     "aliases": [
       "Cine 34"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Mediaset",
+    "group": "03 | Mediaset",
+    "lcn": 34,
+    "epg": "Cine34.it",
+    "logo": "logos/mediaset/cine-34.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Cine 34",
+      "duplicates_in_source": 2
+    }
   },
   "Cine Malizia": {
     "aliases": [
       "Cine Malizia"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "FAST",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/cine-malizia.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Cine Malizia",
+      "duplicates_in_source": 1
+    }
   },
   "Cine Paura": {
     "aliases": [
       "Cine Paura"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "FAST",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/cine-paura.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Cine Paura",
+      "duplicates_in_source": 1
+    }
   },
   "Cine Thriller": {
     "aliases": [
       "Cine Thriller"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "FAST",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/cine-thriller.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Cine Thriller",
+      "duplicates_in_source": 1
+    }
   },
   "Crime Time": {
     "aliases": [
       "Crime Time"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "FAST",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/crime-time.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Crime Time",
+      "duplicates_in_source": 1
+    }
   },
   "Deejay TV": {
     "aliases": [
       "Deejay TV"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "GEDI",
+    "group": "09 | Radio",
+    "lcn": 69,
+    "epg": "DeejayTV.it",
+    "logo": "logos/radio/deejay-tv.png",
     "country": "IT",
-    "type": "tv",
-    "enabled": true
+    "type": "radio",
+    "enabled": true,
+    "source": {
+      "tvg_name": "Deejay TV",
+      "duplicates_in_source": 2
+    }
   },
   "Discovery Channel": {
     "aliases": [
       "Discovery Channel"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "Warner Discovery",
+    "group": "04 | Warner Discovery",
     "lcn": null,
-    "epg": "",
-    "logo": "",
+    "epg": "DiscoveryChannel.it",
+    "logo": "logos/discovery/discovery-channel.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Discovery Channel",
+      "duplicates_in_source": 2
+    }
   },
   "Discovery Turbo": {
     "aliases": [
       "Discovery Turbo"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "Warner Discovery",
+    "group": "04 | Warner Discovery",
     "lcn": null,
-    "epg": "",
-    "logo": "",
+    "epg": "DiscoveryTurbo.it",
+    "logo": "logos/discovery/discovery-turbo.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Discovery Turbo",
+      "duplicates_in_source": 2
+    }
   },
   "DMAX": {
     "aliases": [
       "DMAX"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Warner Discovery",
+    "group": "04 | Warner Discovery",
+    "lcn": 52,
+    "epg": "DMAX.it",
+    "logo": "logos/discovery/dmax.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "DMAX",
+      "duplicates_in_source": 2
+    }
   },
   "Duri a Morire": {
     "aliases": [
       "Duri a Morire"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "FAST",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/duri-a-morire.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Duri a Morire",
+      "duplicates_in_source": 1
+    }
   },
   "Elisa Di Rivombrosa": {
     "aliases": [
@@ -272,59 +350,79 @@
     "logo": "",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Elisa Di Rivombrosa",
+      "duplicates_in_source": 1
+    }
   },
   "Focus": {
     "aliases": [
       "Focus"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Mediaset",
+    "group": "03 | Mediaset",
+    "lcn": 35,
+    "epg": "Focus.it",
+    "logo": "logos/mediaset/focus.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Focus",
+      "duplicates_in_source": 2
+    }
   },
   "Food Network": {
     "aliases": [
       "Food Network"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Warner Discovery",
+    "group": "04 | Warner Discovery",
+    "lcn": 33,
+    "epg": "FoodNetwork.it",
+    "logo": "logos/discovery/food-network.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Food Network",
+      "duplicates_in_source": 2
+    }
   },
   "Frisbee": {
     "aliases": [
       "Frisbee"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Warner Discovery",
+    "group": "08 | Bambini",
+    "lcn": 44,
+    "epg": "Frisbee.it",
+    "logo": "logos/discovery/frisbee.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Frisbee",
+      "duplicates_in_source": 1
+    }
   },
   "Gambero Rosso": {
     "aliases": [
       "Gambero Rosso"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "Gambero Rosso",
+    "group": "10 | Cultura",
     "lcn": null,
-    "epg": "",
-    "logo": "",
+    "epg": "GamberoRosso.it",
+    "logo": "logos/varie/gambero-rosso.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Gambero Rosso",
+      "duplicates_in_source": 2
+    }
   },
   "GF Regia 1": {
     "aliases": [
@@ -337,7 +435,11 @@
     "logo": "",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "GF Regia 1",
+      "duplicates_in_source": 1
+    }
   },
   "GF Regia 2": {
     "aliases": [
@@ -350,7 +452,11 @@
     "logo": "",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "GF Regia 2",
+      "duplicates_in_source": 1
+    }
   },
   "GF Un'ora fa": {
     "aliases": [
@@ -363,65 +469,83 @@
     "logo": "",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "GF Un'ora fa",
+      "duplicates_in_source": 1
+    }
   },
   "Giallo": {
     "aliases": [
       "Giallo"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Warner Discovery",
+    "group": "04 | Warner Discovery",
+    "lcn": 38,
+    "epg": "Giallo.it",
+    "logo": "logos/discovery/giallo.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Giallo",
+      "duplicates_in_source": 2
+    }
   },
   "Gli Immortali": {
     "aliases": [
       "Gli Immortali"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "FAST",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/gli-immortali.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Gli Immortali",
+      "duplicates_in_source": 1
+    }
   },
   "HGTV - Home&Garden": {
     "aliases": [
       "HGTV - Home&Garden"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Warner Discovery",
+    "group": "04 | Warner Discovery",
+    "lcn": 56,
+    "epg": "HGTV.it",
+    "logo": "logos/discovery/hgtv.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "HGTV - Home&Garden",
+      "duplicates_in_source": 2
+    }
   },
   "Iris": {
     "aliases": [
       "Iris"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Mediaset",
+    "group": "03 | Mediaset",
+    "lcn": 22,
+    "epg": "Iris.it",
+    "logo": "logos/mediaset/iris.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Iris",
+      "duplicates_in_source": 1
+    }
   },
   "Italia 1": {
     "aliases": [
-      "Italia 1",
-      "Italia1",
-      "ITALIA 1"
+      "Italia 1"
     ],
     "provider": "Mediaset",
     "group": "01 | Nazionali",
@@ -430,51 +554,66 @@
     "logo": "logos/mediaset/italia-1.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Italia 1",
+      "duplicates_in_source": 2
+    }
   },
   "Italia 2": {
     "aliases": [
       "Italia 2"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Mediaset",
+    "group": "03 | Mediaset",
+    "lcn": 49,
+    "epg": "Italia2.it",
+    "logo": "logos/mediaset/italia-2.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Italia 2",
+      "duplicates_in_source": 1
+    }
   },
   "K2": {
     "aliases": [
       "K2"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Warner Discovery",
+    "group": "08 | Bambini",
+    "lcn": 41,
+    "epg": "K2.it",
+    "logo": "logos/discovery/k2.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "K2",
+      "duplicates_in_source": 1
+    }
   },
   "La 5": {
     "aliases": [
       "La 5"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Mediaset",
+    "group": "03 | Mediaset",
+    "lcn": 30,
+    "epg": "La5.it",
+    "logo": "logos/mediaset/la-5.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "La 5",
+      "duplicates_in_source": 1
+    }
   },
   "LA7": {
     "aliases": [
-      "LA7",
-      "La7"
+      "LA7"
     ],
     "provider": "Cairo",
     "group": "01 | Nazionali",
@@ -483,38 +622,49 @@
     "logo": "logos/la7/la7.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "LA7",
+      "duplicates_in_source": 2
+    }
   },
   "LA7 Cinema": {
     "aliases": [
       "LA7 Cinema"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "FAST",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/la7-cinema.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "LA7 Cinema",
+      "duplicates_in_source": 2
+    }
   },
   "Med. Extra": {
     "aliases": [
       "Med. Extra"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "Mediaset",
+    "group": "03 | Mediaset",
     "lcn": null,
-    "epg": "",
-    "logo": "",
+    "epg": "MediasetExtra.it",
+    "logo": "logos/mediaset/mediaset-extra.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Med. Extra",
+      "duplicates_in_source": 1
+    }
   },
-  "Nove": {
+  "NOVE": {
     "aliases": [
-      "NOVE",
-      "Nove"
+      "NOVE"
     ],
     "provider": "Warner Discovery",
     "group": "01 | Nazionali",
@@ -523,65 +673,83 @@
     "logo": "logos/discovery/nove.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "NOVE",
+      "duplicates_in_source": 2
+    }
   },
   "R101": {
     "aliases": [
       "R101"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Mediaset",
+    "group": "09 | Radio",
+    "lcn": 67,
+    "epg": "R101.it",
+    "logo": "logos/radio/r101.png",
     "country": "IT",
-    "type": "tv",
-    "enabled": true
+    "type": "radio",
+    "enabled": true,
+    "source": {
+      "tvg_name": "R101",
+      "duplicates_in_source": 1
+    }
   },
   "Radio 105": {
     "aliases": [
       "Radio 105"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Mediaset",
+    "group": "09 | Radio",
+    "lcn": 66,
+    "epg": "Radio105.it",
+    "logo": "logos/radio/radio-105.png",
     "country": "IT",
-    "type": "tv",
-    "enabled": true
+    "type": "radio",
+    "enabled": true,
+    "source": {
+      "tvg_name": "Radio 105",
+      "duplicates_in_source": 1
+    }
   },
   "Radio KissKiss": {
     "aliases": [
       "Radio KissKiss"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "Kiss Kiss",
+    "group": "09 | Radio",
     "lcn": null,
-    "epg": "",
-    "logo": "",
+    "epg": "RadioKissKiss.it",
+    "logo": "logos/radio/radio-kisskiss.png",
     "country": "IT",
-    "type": "tv",
-    "enabled": true
+    "type": "radio",
+    "enabled": true,
+    "source": {
+      "tvg_name": "Radio KissKiss",
+      "duplicates_in_source": 1
+    }
   },
   "Radio Number One": {
     "aliases": [
       "Radio Number One"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "Radio Number One",
+    "group": "09 | Radio",
     "lcn": null,
-    "epg": "",
-    "logo": "",
+    "epg": "RadioNumberOne.it",
+    "logo": "logos/radio/radio-number-one.png",
     "country": "IT",
-    "type": "tv",
-    "enabled": true
+    "type": "radio",
+    "enabled": true,
+    "source": {
+      "tvg_name": "Radio Number One",
+      "duplicates_in_source": 1
+    }
   },
   "Rai 1": {
     "aliases": [
-      "Rai 1",
-      "RAI 1",
-      "Rai1"
+      "Rai 1"
     ],
     "provider": "Rai",
     "group": "01 | Nazionali",
@@ -590,13 +758,15 @@
     "logo": "logos/rai/rai-1.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai 1",
+      "duplicates_in_source": 2
+    }
   },
   "Rai 2": {
     "aliases": [
-      "Rai 2",
-      "RAI 2",
-      "Rai2"
+      "Rai 2"
     ],
     "provider": "Rai",
     "group": "01 | Nazionali",
@@ -605,13 +775,15 @@
     "logo": "logos/rai/rai-2.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai 2",
+      "duplicates_in_source": 2
+    }
   },
   "Rai 3": {
     "aliases": [
-      "Rai 3",
-      "RAI 3",
-      "Rai3"
+      "Rai 3"
     ],
     "provider": "Rai",
     "group": "01 | Nazionali",
@@ -620,72 +792,96 @@
     "logo": "logos/rai/rai-3.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai 3",
+      "duplicates_in_source": 2
+    }
   },
   "Rai 4": {
     "aliases": [
       "Rai 4"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Rai",
+    "group": "02 | Rai",
+    "lcn": 21,
+    "epg": "Rai4.it",
+    "logo": "logos/rai/rai-4.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai 4",
+      "duplicates_in_source": 2
+    }
   },
   "Rai 4K (HbbTV)": {
     "aliases": [
       "Rai 4K (HbbTV)"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Rai",
+    "group": "02 | Rai",
+    "lcn": 210,
+    "epg": "Rai4K.it",
+    "logo": "logos/rai/rai-4k.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai 4K (HbbTV)",
+      "duplicates_in_source": 2
+    }
   },
   "Rai 5": {
     "aliases": [
       "Rai 5"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Rai",
+    "group": "02 | Rai",
+    "lcn": 23,
+    "epg": "Rai5.it",
+    "logo": "logos/rai/rai-5.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai 5",
+      "duplicates_in_source": 2
+    }
   },
   "Rai Gulp": {
     "aliases": [
       "Rai Gulp"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Rai",
+    "group": "08 | Bambini",
+    "lcn": 42,
+    "epg": "RaiGulp.it",
+    "logo": "logos/rai/rai-gulp.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai Gulp",
+      "duplicates_in_source": 1
+    }
   },
   "Rai Movie": {
     "aliases": [
       "Rai Movie"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Rai",
+    "group": "02 | Rai",
+    "lcn": 24,
+    "epg": "RaiMovie.it",
+    "logo": "logos/rai/rai-movie.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai Movie",
+      "duplicates_in_source": 2
+    }
   },
   "Rai News 24": {
     "aliases": [
@@ -698,182 +894,236 @@
     "logo": "logos/rai/rai-news-24.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai News 24",
+      "duplicates_in_source": 2
+    }
   },
   "Rai Premium": {
     "aliases": [
       "Rai Premium"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Rai",
+    "group": "02 | Rai",
+    "lcn": 25,
+    "epg": "RaiPremium.it",
+    "logo": "logos/rai/rai-premium.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai Premium",
+      "duplicates_in_source": 2
+    }
   },
   "Rai Scuola": {
     "aliases": [
       "Rai Scuola"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Rai",
+    "group": "10 | Cultura",
+    "lcn": 57,
+    "epg": "RaiScuola.it",
+    "logo": "logos/rai/rai-scuola.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai Scuola",
+      "duplicates_in_source": 2
+    }
   },
   "Rai Sport + HD": {
     "aliases": [
       "Rai Sport + HD"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Rai",
+    "group": "07 | Sport",
+    "lcn": 58,
+    "epg": "RaiSport.it",
+    "logo": "logos/rai/rai-sport.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai Sport + HD",
+      "duplicates_in_source": 1
+    }
   },
   "Rai Storia": {
     "aliases": [
       "Rai Storia"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Rai",
+    "group": "10 | Cultura",
+    "lcn": 54,
+    "epg": "RaiStoria.it",
+    "logo": "logos/rai/rai-storia.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai Storia",
+      "duplicates_in_source": 2
+    }
   },
   "Rai Yoyo": {
     "aliases": [
       "Rai Yoyo"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Rai",
+    "group": "08 | Bambini",
+    "lcn": 43,
+    "epg": "RaiYoyo.it",
+    "logo": "logos/rai/rai-yoyo.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rai Yoyo",
+      "duplicates_in_source": 1
+    }
   },
   "RAKUTEN COMMEDIA": {
     "aliases": [
       "RAKUTEN COMMEDIA"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "Rakuten TV",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/rakuten-commedia.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "RAKUTEN COMMEDIA",
+      "duplicates_in_source": 1
+    }
   },
   "RAKUTEN FAMILY": {
     "aliases": [
       "RAKUTEN FAMILY"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "Rakuten TV",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/rakuten-family.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "RAKUTEN FAMILY",
+      "duplicates_in_source": 1
+    }
   },
   "RAKUTEN FANTASCIENZA": {
     "aliases": [
       "RAKUTEN FANTASCIENZA"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "Rakuten TV",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/rakuten-fantascienza.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "RAKUTEN FANTASCIENZA",
+      "duplicates_in_source": 1
+    }
   },
   "RAKUTEN ROMANZI": {
     "aliases": [
       "RAKUTEN ROMANZI"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "Rakuten TV",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/rakuten-romanzi.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "RAKUTEN ROMANZI",
+      "duplicates_in_source": 1
+    }
   },
   "RAKUTEN TV AZIONE": {
     "aliases": [
       "RAKUTEN TV AZIONE"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "Rakuten TV",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/rakuten-tv-azione.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "RAKUTEN TV AZIONE",
+      "duplicates_in_source": 1
+    }
   },
   "RAKUTEN TV DRAMMA": {
     "aliases": [
       "RAKUTEN TV DRAMMA"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "Rakuten TV",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/rakuten-tv-dramma.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "RAKUTEN TV DRAMMA",
+      "duplicates_in_source": 1
+    }
   },
   "RDS": {
     "aliases": [
       "RDS"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "RDS",
+    "group": "09 | Radio",
     "lcn": null,
-    "epg": "",
-    "logo": "",
+    "epg": "RDS.it",
+    "logo": "logos/radio/rds.png",
     "country": "IT",
-    "type": "tv",
-    "enabled": true
+    "type": "radio",
+    "enabled": true,
+    "source": {
+      "tvg_name": "RDS",
+      "duplicates_in_source": 1
+    }
   },
   "Real Time": {
     "aliases": [
       "Real Time"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Warner Discovery",
+    "group": "04 | Warner Discovery",
+    "lcn": 31,
+    "epg": "RealTime.it",
+    "logo": "logos/discovery/real-time.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Real Time",
+      "duplicates_in_source": 3
+    }
   },
   "Rete 4": {
     "aliases": [
-      "Rete 4",
-      "Rete4",
-      "RETE 4"
+      "Rete 4"
     ],
     "provider": "Mediaset",
     "group": "01 | Nazionali",
@@ -882,20 +1132,28 @@
     "logo": "logos/mediaset/rete-4.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Rete 4",
+      "duplicates_in_source": 2
+    }
   },
   "RTL 102.5": {
     "aliases": [
       "RTL 102.5"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "RTL",
+    "group": "09 | Radio",
+    "lcn": 36,
+    "epg": "RTL1025.it",
+    "logo": "logos/radio/rtl-102-5.png",
     "country": "IT",
-    "type": "tv",
-    "enabled": true
+    "type": "radio",
+    "enabled": true,
+    "source": {
+      "tvg_name": "RTL 102.5",
+      "duplicates_in_source": 2
+    }
   },
   "Sky TG24": {
     "aliases": [
@@ -908,38 +1166,49 @@
     "logo": "logos/sky/sky-tg24.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Sky TG24",
+      "duplicates_in_source": 2
+    }
   },
   "STORIE CRIMINALI": {
     "aliases": [
       "STORIE CRIMINALI"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "FAST",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/storie-criminali.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "STORIE CRIMINALI",
+      "duplicates_in_source": 1
+    }
   },
   "Supercinema San Valentino": {
     "aliases": [
       "Supercinema San Valentino"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "FAST",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/supercinema-san-valentino.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Supercinema San Valentino",
+      "duplicates_in_source": 1
+    }
   },
-  "TGCOM24": {
+  "TG COM 24": {
     "aliases": [
-      "TG COM 24",
-      "TGCOM24"
+      "TG COM 24"
     ],
     "provider": "Mediaset",
     "group": "06 | News",
@@ -948,25 +1217,32 @@
     "logo": "logos/mediaset/tgcom24.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "TG COM 24",
+      "duplicates_in_source": 2
+    }
   },
   "TOPcrime": {
     "aliases": [
       "TOPcrime"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Mediaset",
+    "group": "03 | Mediaset",
+    "lcn": 39,
+    "epg": "TopCrime.it",
+    "logo": "logos/mediaset/topcrime.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "TOPcrime",
+      "duplicates_in_source": 2
+    }
   },
   "TV8": {
     "aliases": [
-      "TV8",
-      "TV 8"
+      "TV8"
     ],
     "provider": "Sky",
     "group": "01 | Nazionali",
@@ -975,32 +1251,44 @@
     "logo": "logos/sky/tv8.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "TV8",
+      "duplicates_in_source": 2
+    }
   },
   "Twenty Seven": {
     "aliases": [
       "Twenty Seven"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
+    "provider": "Mediaset",
+    "group": "03 | Mediaset",
+    "lcn": 27,
+    "epg": "TwentySeven.it",
+    "logo": "logos/mediaset/twenty-seven.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Twenty Seven",
+      "duplicates_in_source": 2
+    }
   },
   "Western Time": {
     "aliases": [
       "Western Time"
     ],
-    "provider": "",
-    "group": "90 | Da revisionare",
+    "provider": "FAST",
+    "group": "12 | FAST",
     "lcn": null,
     "epg": "",
-    "logo": "",
+    "logo": "logos/fast/western-time.png",
     "country": "IT",
     "type": "tv",
-    "enabled": true
+    "enabled": true,
+    "source": {
+      "tvg_name": "Western Time",
+      "duplicates_in_source": 1
+    }
   }
 }
