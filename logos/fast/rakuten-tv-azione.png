@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!-- ── SEO base ─────────────────────────────────────── -->
+<title>Web Developer Eboli Salerno | Davide Fulgione</title>
+<meta name="description" content="Davide Fulgione Web Developer – siti web, CRM, API REST, PWA. Eboli (SA).">
+<meta name="author"      content="Davide Fulgione">
+<meta name="robots"      content="index, follow">
+<link rel="canonical"    href="https://www.davidefulgione.it/">
+<meta name="theme-color" content="#d018ab">
+
+<!-- ── Open Graph (Facebook, LinkedIn, WhatsApp) ──── -->
+<meta property="og:type"         content="website">
+<meta property="og:url"          content="https://www.davidefulgione.it/">
+<meta property="og:title"        content="Web Developer Eboli Salerno | Davide Fulgione">
+<meta property="og:description"  content="Davide Fulgione Web Developer – siti web, CRM, API REST, PWA. Eboli (SA).">
+<meta property="og:image"        content="https://www.davidefulgione.it/assets/img/social.jpg">
+<meta property="og:image:width"  content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt"    content="Davide Fulgione — Web Developer">
+<meta property="og:site_name"    content="Davide Fulgione">
+<meta property="og:locale"       content="it_IT">
+
+<!-- ── Twitter Card ─────────────────────────────────── -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="Web Developer Eboli Salerno | Davide Fulgione">
+<meta name="twitter:description" content="Davide Fulgione Web Developer – siti web, CRM, API REST, PWA. Eboli (SA).">
+<meta name="twitter:image"       content="https://www.davidefulgione.it/assets/img/social.jpg">
+<meta name="twitter:image:alt"   content="Davide Fulgione — Web Developer">
+
+<!-- ── Schema.org JSON-LD ───────────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Davide Fulgione",
+  "url": "https://www.davidefulgione.it",
+  "image": "https://www.davidefulgione.it/assets/img/social.jpg",
+  "jobTitle": "Web Developer",
+  "description": "Web Developer freelance specializzato in siti web, CRM, API REST e PWA. Eboli, Salerno.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Eboli",
+    "addressRegion": "SA",
+    "addressCountry": "IT"
+  },
+  "email": "info@davidefulgione.it",
+  "sameAs": [
+    "https://it.linkedin.com/in/davide-fulgione-7002b930b",
+    "https://www.facebook.com/profile.php?id=61574595784227"
+  ],
+  "knowsAbout": ["PHP", "MySQL", "JavaScript", "CSS", "HTML", "API REST", "PWA", "SEO", "CRM", "E-commerce"]
+}
+</script>
+
+<!-- ── PWA ──────────────────────────────────────────── -->
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="DF Developer">
+
+<!-- ── Favicon ──────────────────────────────────────── -->
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+
+<!-- Font Google — Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css?v=1782362586">
+
+<!-- Google Analytics — Consent Mode v2 -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    wait_for_update: 500
+  });
+  gtag('js', new Date());
+  gtag('config', 'G-B0PL9TRBVL');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B0PL9TRBVL"></script>
+</head>
+<body>
+
+<!-- ── PAGE LOADER ── -->
+<div id="page-loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-logo">
+      <img src="assets/img/davide.jpg" alt="Davide Fulgione">
+    </div>
+    <div class="loader-name">Davide Fulgione</div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── PAGE TRANSITION OVERLAY ── -->
+<div id="page-transition" aria-hidden="true"></div>
+
+<script>
+// Loader + transizioni pagina — inline per eseguire prima del CSS
+(function(){
+  var loader = document.getElementById('page-loader');
+  var overlay = document.getElementById('page-transition');
+
+  // Nascondi loader quando pagina è pronta
+  function hideLoader(){
+    loader.classList.add('loader-done');
+    setTimeout(function(){ loader.style.display = 'none'; }, 600);
+  }
+  if (document.readyState === 'complete') {
+    setTimeout(hideLoader, 800);
+  } else {
+    window.addEventListener('load', function(){ setTimeout(hideLoader, 400); });
+  }
+
+  // Transizione su click link interni
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if (!a) return;
+    var href = a.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') ||
+        href.startsWith('tel:') || href.startsWith('http') ||
+        a.target === '_blank') return;
+    // Se l'href contiene un'ancora (#), lascia il browser gestire normalmente
+    if (href.indexOf('#') !== -1) return;
+    e.preventDefault();
+    overlay.classList.add('transition-out');
+    setTimeout(function(){ window.location.href = href; }, 350);
+  });
+
+  // Fade-in all'arrivo
+  window.addEventListener('pageshow', function(){
+    overlay.classList.remove('transition-out');
+  });
+})();
+</script>
+
+<!-- Orb sfondo -->
+<div class="bg-orb orb-1" aria-hidden="true"></div>
+<div class="bg-orb orb-2" aria-hidden="true"></div>
+
+<!-- ====================================================
+     NAVBAR
+==================================================== -->
+<header id="navbar">
+  <div class="nav-wrap">
+
+    <a href="index.php" class="logo">
+      <span class="logo-photo-wrap"><img src="assets/img/davide.jpg" alt="Davide Fulgione" width="38" height="38"></span>
+      <div class="logo-copy">
+        <span class="logo-name">Davide Fulgione</span>
+        <span class="logo-role">Web Developer</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Menu principale">
+      <a href="servizi.php"   class="nav-a">Servizi</a>
+      <a href="blog.php"      class="nav-a">Blog</a>
+      <a href="portfolio.php" class="nav-a">Portfolio</a>
+      <a href="news.php"      class="nav-a">News</a>
+      <a href="ludoteca.php"  class="nav-a">Ludoteca</a>
+      <a href="contatti.php"  class="nav-a">Contatti</a>
+    </nav>
+
+    <a href="contatti.php" class="nav-btn nav-btn-icon" aria-label="Contattami">
+      <i class="far fa-envelope"></i>
+    </a>
+
+    <button class="hamburger" id="hbg" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</header>
+
+<!-- Menu mobile -->
+<nav class="mob-nav" id="mobnav" aria-label="Menu mobile">
+  <ul class="mob-links">
+    <li><a href="index.php">    <i class="fa fa-home"></i>      Home</a></li>
+    <li><a href="servizi.php">  <i class="fa fa-code"></i>      Servizi</a></li>
+    <li><a href="blog.php">     <i class="fa fa-newspaper"></i> Blog</a></li>
+    <li><a href="portfolio.php"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+    <li><a href="news.php">     <i class="fa fa-rss"></i>       News</a></li>
+    <li><a href="ludoteca.php"> <i class="fa fa-gamepad"></i>   Ludoteca</a></li>
+    <li><a href="contatti.php"> <i class="far fa-envelope"></i> Contatti</a></li>
+  </ul>
+  <div class="mob-social">
+    <a href="https://it.linkedin.com/in/davide-fulgione-7002b930b" class="soc" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61574595784227&locale=it_IT" class="soc" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+  </div>
+</nav>
+<!-- ====================================================
+     HERO
+==================================================== -->
+<section class="hero" id="hero">
+
+  <!-- Slider sfondo -->
+  <div class="slides" aria-hidden="true">
+    <div class="slide active"><img src="assets/img/12.jpg" alt="" loading="eager"></div>
+    <div class="slide">       <img src="assets/img/22.jpg" alt="" loading="lazy"></div>
+    <div class="slide">       <img src="assets/img/33.jpg" alt="" loading="lazy"></div>
+  </div>
+  <div class="hero-veil" aria-hidden="true"></div>
+
+  <!-- Foto PNG fissa trasparente in primo piano -->
+  <div class="hero-png" aria-hidden="true">
+    <img src="assets/img/1.png" alt="">
+  </div>
+
+  <div class="hero-body">
+
+    <div class="hero-pill">
+      <span class="pill-dot"></span>
+      Full Stack Web Developer
+    </div>
+
+    <h1 class="hero-title">
+      Davide Fulgione<br>
+      <em>Web Developer</em>
+    </h1>
+
+    <p class="hero-sub">
+      "Non cercare subito il successo —<br>
+       inizia a dare valore ai tuoi progetti."
+    </p>
+
+    <div class="hero-actions">
+      <a href="blog.php" class="btn-main">
+        <i class="fa fa-newspaper"></i> Blog
+      </a>
+      <a href="servizi.php" class="btn-ghost">
+        <i class="fa fa-code"></i> Servizi
+      </a>
+    </div>
+
+    <div class="hero-search">
+      <input type="text" id="hero-search-input" placeholder="Cerca Articoli nel Blog..." autocomplete="off">
+      <button type="button" id="hero-search-btn" aria-label="Cerca">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+(function(){
+  // Slider solo su desktop — su mobile rimane fisso su 12.jpg
+  if (window.innerWidth >= 1025) {
+    var sl  = document.querySelectorAll('.slides .slide');
+    var cur = 0;
+    setInterval(function(){
+      sl[cur].classList.remove('active');
+      cur = (cur + 1) % sl.length;
+      sl[cur].classList.add('active');
+    }, 5000);
+  }
+
+  // Ricerca blog
+  var inp = document.getElementById('hero-search-input');
+  var btn = document.getElementById('hero-search-btn');
+  function doSearch(){
+    var q = inp.value.trim();
+    if (q !== '') {
+      window.location.href = 'blog.php?q=' + encodeURIComponent(q);
+    }
+  }
+  btn.addEventListener('click', doSearch);
+  inp.addEventListener('keydown', function(e){
+    if (e.key === 'Enter') doSearch();
+  });
+})();
+</script>
+
+<!-- sections-wrap: sale sopra la hero fixed -->
+<div class="sections-wrap">
+
+<!-- ====================================================
+     ULTIMI ARTICOLI BLOG
+==================================================== -->
+<section class="blog-section page-section" id="ultimi-blog">
+  <div class="blog-inner">
+
+    <div class="blog-header">
+      <div class="blog-header-left">
+        <span class="blog-badge"><i class="fa fa-newspaper"></i> Blog</span>
+        <h2 class="blog-title">Ultimi Articoli</h2>
+      </div>
+      <a href="blog.php" class="blog-all">
+        Tutti gli articoli <i class="fa fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="blog-scroll-area">
+      <button class="blog-arrow blog-arrow--prev" id="blog-prev" aria-label="Scorri sinistra">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+
+      <div class="blog-track-wrap" id="blog-wrap" style="-webkit-overflow-scrolling:touch;">
+        <div class="blog-track" id="blog-track">
+
+          <a href="blog.php?slug=perche-la-tv-non-e-piu-in-chiaro-criptazione-dei-segnali-cas-drm-e-la-fine-del-free-to-air" class="blog-card">
+            <div class="blog-card-img">
+              <img src="assets/img/blog/blog_1782541653_3ac8135b.webp" alt="Perché la TV non è più &quot;in chiaro&quot;: criptazione dei segnali, CAS, DRM e la fine del free-to-air" loading="lazy">
+                            <span class="blog-cat">IPTV</span>
+                          </div>
+            <div class="blog-card-body">
+              <h3 class="blog-card-title">Perché la TV non è più &quot;in chiaro&quot;: criptazione dei segnali, CAS, DRM e la fine del free-to-air</h3>
+              <p class="blog-card-sum">La televisione è passata silenziosamente da un modello in cui il segnale era un bene pubblico — irra…</p>
+              <div class="blog-card-meta">
+                <span><i class="fa fa-calendar-days"></i> 27 Jun 2026</span>
+                <span><i class="fa fa-eye"></i> 138</span>
+              </div>
+            </div>
+          </a>
+          <a href="blog.php?slug=goving-il-crm-per-la-cessione-del-quinto-e-la-delegazione-di-stipendio" class="blog-card">
+            <div class="blog-card-img">
+              <img src="assets/img/blog/blog_1782366721_fa3eb663.jpg" alt="Goving il Crm per la cessione del quinto e la delegazione di stipendio" loading="lazy">
+                            <span class="blog-cat">Altro</span>
+                          </div>
+            <div class="blog-card-body">
+              <h3 class="blog-card-title">Goving il Crm per la cessione del quinto e la delegazione di stipendio</h3>
+              <p class="blog-card-sum">Se gestisci una società di mediazione creditizia e vuoi vedere cosa significa avere tutto sotto cont…</p>
+              <div class="blog-card-meta">
+                <span><i class="fa fa-calendar-days"></i> 25 Jun 2026</span>
+                <span><i class="fa fa-eye"></i> 37</span>
+              </div>
+            </div>
+          </a>
+          <a href="blog.php?slug=fulgione-come-avviare-la-tua-piattaforma-di-streaming-senza-scrivere-una-riga-di-codice" class="blog-card">
+            <div class="blog-card-img">
+              <img src="assets/img/blog/blog_1782194406_ca48892e.jpg" alt="Fulgione+: come avviare la tua piattaforma di streaming senza scrivere una riga di codice" loading="lazy">
+                            <span class="blog-cat">IPTV</span>
+                          </div>
+            <div class="blog-card-body">
+              <h3 class="blog-card-title">Fulgione+: come avviare la tua piattaforma di streaming senza scrivere una riga di codice</h3>
+              <p class="blog-card-sum">Negli ultimi anni lo streaming on-demand è diventato lo standard con cui tutti guardiamo film e seri…</p>
+              <div class="blog-card-meta">
+                <span><i class="fa fa-calendar-days"></i> 23 Jun 2026</span>
+                <span><i class="fa fa-eye"></i> 168</span>
+              </div>
+            </div>
+          </a>
+          <a href="blog.php?slug=iptv-lombardia-la-nuova-lista-iptv-m3u-per-lo-streaming-gratuita" class="blog-card">
+            <div class="blog-card-img">
+              <img src="assets/img/blog/blog_1779424860_bd763986.webp" alt="IPTV Lombardia: La Nuova Lista Iptv M3u per lo Streaming Gratuita" loading="lazy">
+                            <span class="blog-cat">IPTV</span>
+                          </div>
+            <div class="blog-card-body">
+              <h3 class="blog-card-title">IPTV Lombardia: La Nuova Lista Iptv M3u per lo Streaming Gratuita</h3>
+              <p class="blog-card-sum">IPTV Lombardia: La Nuova Lista Iptv M3u per lo Streaming Gratuita. Per tutti i residenti in Lombardi…</p>
+              <div class="blog-card-meta">
+                <span><i class="fa fa-calendar-days"></i> 22 May 2026</span>
+                <span><i class="fa fa-eye"></i> 1,845</span>
+              </div>
+            </div>
+          </a>
+          <a href="blog.php?slug=arriva-la-iptv-di-davide-fulgione-tv" class="blog-card">
+            <div class="blog-card-img">
+              <img src="assets/img/blog/blog_1778693125_f474747a.jpeg" alt="Arriva la IPTV di Davide Fulgione TV" loading="lazy">
+                            <span class="blog-cat">IPTV</span>
+                          </div>
+            <div class="blog-card-body">
+              <h3 class="blog-card-title">Arriva la IPTV di Davide Fulgione TV</h3>
+              <p class="blog-card-sum">Che tu sia su smartphone, tablet o PC, la piattaforma si adatta perfettamente al tuo schermo, trasfo…</p>
+              <div class="blog-card-meta">
+                <span><i class="fa fa-calendar-days"></i> 13 May 2026</span>
+                <span><i class="fa fa-eye"></i> 3,068</span>
+              </div>
+            </div>
+          </a>
+          <a href="blog.php?slug=disponibile-la-nuova-lista-m3u-dei-canali-in-chiaro-maggio-2026" class="blog-card">
+            <div class="blog-card-img">
+              <img src="assets/img/blog/blog_1778515204_c56d0ac8.jpg" alt="Disponibile la nuova lista M3U dei canali in chiaro (Maggio 2026)" loading="lazy">
+                            <span class="blog-cat">IPTV</span>
+                          </div>
+            <div class="blog-card-body">
+              <h3 class="blog-card-title">Disponibile la nuova lista M3U dei canali in chiaro (Maggio 2026)</h3>
+              <p class="blog-card-sum">La nuova playlist dedicata ai canali Free-to-Air (in chiaro) è ora disponibile e include 50 canali a…</p>
+              <div class="blog-card-meta">
+                <span><i class="fa fa-calendar-days"></i> 11 May 2026</span>
+                <span><i class="fa fa-eye"></i> 5,373</span>
+              </div>
+            </div>
+          </a>
+
+        </div><!-- /blog-track -->
+      </div><!-- /blog-track-wrap -->
+
+      <button class="blog-arrow blog-arrow--next" id="blog-next" aria-label="Scorri destra">
+        <i class="fa fa-chevron-right"></i>
+      </button>
+    </div><!-- /blog-scroll-area -->
+
+  </div><!-- /blog-inner -->
+</section>
+
+<script>
+function initScroller(wrapId, trackId, prevId, nextId, cardClass) {
+  var wrap  = document.getElementById(wrapId);
+  var track = document.getElementById(trackId);
+  var prev  = document.getElementById(prevId);
+  var next  = document.getElementById(nextId);
+  if (!wrap || !track) return;
+
+  var GAP = 16;
+
+  function setCardWidths() {
+    var cards = track.querySelectorAll('.' + cardClass);
+    if (!cards.length) return;
+    if (window.innerWidth < 1025) {
+      cards.forEach(function(c){ c.style.width = ''; });
+      return;
+    }
+    var w = Math.floor((wrap.clientWidth - GAP * 2) / 3);
+    cards.forEach(function(c){ c.style.width = w + 'px'; });
+  }
+
+  function pageW() {
+    var card = track.querySelector('.' + cardClass);
+    if (!card) return wrap.clientWidth;
+    return (card.offsetWidth + GAP) * 3;
+  }
+
+  function updateArrows() {
+    if (!prev || !next) return;
+    prev.classList.toggle(cardClass.replace('-card','') + '-arrow--hidden', wrap.scrollLeft <= 4);
+    next.classList.toggle(cardClass.replace('-card','') + '-arrow--hidden', wrap.scrollLeft >= wrap.scrollWidth - wrap.clientWidth - 4);
+  }
+
+  setCardWidths();
+  updateArrows();
+  window.addEventListener('resize', function(){ setCardWidths(); updateArrows(); });
+
+  if (prev) prev.addEventListener('click', function(){ wrap.scrollBy({ left: -pageW(), behavior: 'smooth' }); });
+  if (next) next.addEventListener('click', function(){ wrap.scrollBy({ left:  pageW(), behavior: 'smooth' }); });
+  wrap.addEventListener('scroll', updateArrows, { passive: true });
+
+  /* Drag solo su desktop — non interferisce con touch Safari */
+  if (!('ontouchstart' in window)) {
+    var isDown = false, startX = 0, scrollStart = 0;
+    wrap.addEventListener('mousedown', function(e){
+      isDown = true; startX = e.pageX; scrollStart = wrap.scrollLeft;
+      wrap.style.cursor = 'grabbing'; wrap.style.userSelect = 'none';
+    });
+    document.addEventListener('mouseup', function(){
+      if (!isDown) return; isDown = false;
+      wrap.style.cursor = ''; wrap.style.userSelect = '';
+    });
+    document.addEventListener('mousemove', function(e){
+      if (!isDown) return; e.preventDefault();
+      wrap.scrollLeft = scrollStart - (e.pageX - startX);
+    });
+  }
+}
+
+initScroller('blog-wrap', 'blog-track', 'blog-prev', 'blog-next', 'blog-card');
+</script>
+
+<!-- ====================================================
+     NEWS + NEWSLETTER — sezione unica due colonne
+==================================================== -->
+<section class="news-nl-section page-section" id="news-newsletter">
+
+  
+  <div class="news-nl-wrap">
+
+    <!-- COLONNA SINISTRA: News -->
+    <div class="news-nl-col news-nl-col--news">
+
+      <div class="news-header">
+        <div class="news-header-left">
+          <span class="news-badge"><i class="fa fa-rss"></i> News</span>
+          <h2 class="news-title">Ultime Notizie</h2>
+        </div>
+        <a href="news.php" class="news-all">
+          Tutte le notizie <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <ul class="news-list">
+        <li class="news-list-item">
+          <a href="news.php?slug=liste-m3u-per-iptv-come-crearle-importarle-nei-player-e-perche-a-volte-non-funzionano">
+                        <span class="news-list-cat">PHP</span>
+                        <span class="news-list-title">Liste M3U per IPTV: come crearle, importarle nei player e perché a volte non funzionano</span>
+            <span class="news-list-date"><i class="fa fa-calendar-days"></i> 27 Jun 2026</span>
+          </a>
+        </li>
+        <li class="news-list-item">
+          <a href="news.php?slug=e-la-fine-anche-della-iptv-e-dei-flussi-m3u-liberi">
+                        <span class="news-list-cat">Altro</span>
+                        <span class="news-list-title">E&#039; la fine anche della IPTV e dei flussi m3u liberi?</span>
+            <span class="news-list-date"><i class="fa fa-calendar-days"></i> 12 May 2026</span>
+          </a>
+        </li>
+        <li class="news-list-item">
+          <a href="news.php?slug=liste-m3u-iptv-in-aggiornamento">
+                        <span class="news-list-cat">Altro</span>
+                        <span class="news-list-title">Liste M3u Iptv in aggiornamento</span>
+            <span class="news-list-date"><i class="fa fa-calendar-days"></i> 11 May 2026</span>
+          </a>
+        </li>
+        <li class="news-list-item">
+          <a href="news.php?slug=rai-3-e-tornato-grazie-alla-vostra-segnalazione">
+                        <span class="news-list-title">Rai 3 è tornato! Grazie alla vostra segnalazione</span>
+            <span class="news-list-date"><i class="fa fa-calendar-days"></i> 07 May 2026</span>
+          </a>
+        </li>
+        <li class="news-list-item">
+          <a href="news.php?slug=benvenuto-nel-nuovo-sito-un-progetto-costruito-con-cura-codice-e-passione">
+                        <span class="news-list-cat">Altro</span>
+                        <span class="news-list-title">Benvenuto nel nuovo sito — un progetto costruito con cura, codice e passione</span>
+            <span class="news-list-date"><i class="fa fa-calendar-days"></i> 05 May 2026</span>
+          </a>
+        </li>
+      </ul>
+
+    </div><!-- /col news -->
+
+    <!-- DIVISORE VERTICALE -->
+    <div class="news-nl-divider" aria-hidden="true"></div>
+
+    <!-- COLONNA DESTRA: Newsletter -->
+    <div class="news-nl-col news-nl-col--nl">
+
+      <div class="nl-inner">
+        <div class="nl-badge">
+          <i class="fa fa-envelope-open-text"></i>
+          Newsletter
+        </div>
+        <h2 class="nl-title">Resta sempre aggiornato</h2>
+        <p class="nl-sub">
+          Articoli su sviluppo web, tips PHP/MySQL, novità dal mondo tech.<br>
+          Niente spam — solo contenuti che vale la pena leggere.
+        </p>
+        <form class="nl-form" id="nl-form" novalidate>
+          <input type="text" name="website" id="nl-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="csrf_token" id="nl-csrf" value="d0519659529b082765837e5888c2b8166550dc92e4a5f0ea5b449562563ac53c">
+          <div class="nl-field-wrap">
+            <i class="fa fa-envelope nl-field-icon"></i>
+            <input type="email" name="email" id="nl-email" class="nl-input"
+              placeholder="La tua email..." autocomplete="email" required>
+            <button type="submit" class="nl-btn" id="nl-submit">
+              <span class="nl-btn-text">Iscriviti</span>
+              <i class="fa fa-arrow-right nl-btn-icon"></i>
+              <span class="nl-spinner" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="nl-msg" id="nl-msg" role="alert" aria-live="polite"></div>
+          <p class="nl-privacy">
+            <i class="fa fa-lock"></i>
+            Confermando riceverai una mail di verifica.
+          </p>
+        </form>
+      </div>
+
+      <div class="nl-orb nl-orb-l" aria-hidden="true"></div>
+      <div class="nl-orb nl-orb-r" aria-hidden="true"></div>
+
+    </div><!-- /col nl -->
+
+  </div><!-- /news-nl-wrap -->
+
+</section>
+
+<script>
+(function(){
+  var form    = document.getElementById('nl-form');
+  var input   = document.getElementById('nl-email');
+  var msg     = document.getElementById('nl-msg');
+  var btn     = document.getElementById('nl-submit');
+  var lastSub = 0;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var now = Date.now();
+    if (now - lastSub < 8000) return;
+    lastSub = now;
+    var email = input.value.trim();
+    var honey = document.getElementById('nl-honey').value;
+    if (!email) { showMsg('Inserisci la tua email.', 'error'); return; }
+    btn.disabled = true; btn.classList.add('loading');
+    msg.className = 'nl-msg'; msg.textContent = '';
+    var fd = new FormData();
+    fd.append('email', email);
+    fd.append('website', honey);
+    fd.append('csrf_token', document.getElementById('nl-csrf').value);
+    fetch('newsletter_subscribe.php', { method: 'POST', body: fd })
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        showMsg(data.message, data.status);
+        if (data.status === 'success' || data.status === 'already') input.value = '';
+      })
+      .catch(function(){ showMsg('Errore di rete. Riprova tra poco.', 'error'); })
+      .finally(function(){ btn.disabled = false; btn.classList.remove('loading'); });
+  });
+  function showMsg(text, type){
+    msg.textContent = text;
+    msg.className = 'nl-msg nl-msg--' + type + ' nl-msg--visible';
+  }
+})();
+</script>
+
+
+<!-- ====================================================
+     SERVIZI DETTAGLIO
+==================================================== -->
+<!-- ====================================================
+     TECH STACK — scroller slim
+==================================================== -->
+<section class="srv-stack page-section">
+  <div class="srv-stack-inner">
+    <div class="srv-stack-label">Tech stack</div>
+    <div class="srv-stack-track-wrap">
+      <div class="srv-stack-track">
+        <div class="srv-tech"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+        <div class="srv-tech"><i class="fa fa-database"></i><span>MySQL</span></div>
+        <div class="srv-tech"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+        <div class="srv-tech"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+        <div class="srv-tech"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+        <div class="srv-tech"><i class="fa fa-c"></i><span>C</span></div>
+        <div class="srv-tech"><i class="fa fa-c"></i><span>C++</span></div>
+        <div class="srv-tech"><i class="fa-brands fa-python"></i><span>Python</span></div>
+        <div class="srv-tech"><i class="fa fa-window-maximize"></i><span>ASP.NET</span></div>
+        <div class="srv-tech"><i class="fa fa-mobile-screen-button"></i><span>PWA</span></div>
+        <div class="srv-tech"><i class="fa fa-plug"></i><span>REST API</span></div>
+        <div class="srv-tech"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+        <div class="srv-tech"><i class="fa fa-server"></i><span>Linux Server</span></div>
+        <div class="srv-tech"><i class="fa fa-shield-halved"></i><span>SSL / HTTPS</span></div>
+        <div class="srv-tech"><i class="fa fa-terminal"></i><span>Bash / CLI</span></div>
+        <div class="srv-tech"><i class="fa fa-brain"></i><span>AI / LLM</span></div>
+        <!-- Duplicati per scroll continuo -->
+        <div class="srv-tech" aria-hidden="true"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa fa-database"></i><span>MySQL</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa fa-c"></i><span>C</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa fa-c"></i><span>C++</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa-brands fa-python"></i><span>Python</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa fa-window-maximize"></i><span>ASP.NET</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa fa-mobile-screen-button"></i><span>PWA</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa fa-plug"></i><span>REST API</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa fa-server"></i><span>Linux Server</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa fa-shield-halved"></i><span>SSL / HTTPS</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa fa-terminal"></i><span>Bash / CLI</span></div>
+        <div class="srv-tech" aria-hidden="true"><i class="fa fa-brain"></i><span>AI / LLM</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="svcd-section page-section" id="servizi-dettaglio">
+  <div class="svcd-inner">
+
+    <div class="svcd-head">
+      <span class="svcd-badge"><i class="fa fa-code"></i> Cosa faccio</span>
+      <h2 class="svcd-title">Soluzioni digitali<br><em>su misura per te</em></h2>
+      <p class="svcd-sub">Dal concept al deploy — ogni progetto nasce da un ascolto attento e si traduce in codice pulito, performante e scalabile.</p>
+    </div>
+
+    <div class="svcd-grid">
+
+      <div class="svcd-card">
+        <div class="svcd-card-icon"><i class="fa fa-pen-ruler"></i></div>
+        <div class="svcd-card-body">
+          <h3>Design &amp; UX</h3>
+          <p>Interfacce moderne, intuitive e responsive. Studio il brand e progetto layout che convertono, con attenzione all'accessibilità e alla user experience.</p>
+          <ul class="svcd-tags"><li>Figma</li><li>Wireframe</li><li>UI/UX</li><li>Responsive</li></ul>
+        </div>
+      </div>
+
+      <div class="svcd-card">
+        <div class="svcd-card-icon"><i class="fa fa-code"></i></div>
+        <div class="svcd-card-body">
+          <h3>Sviluppo Web</h3>
+          <p>Siti web e web-app custom in PHP, MySQL, HTML/CSS e JavaScript. Codice pulito, veloce, sicuro — senza framework inutili se non servono.</p>
+          <ul class="svcd-tags"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>CSS</li></ul>
+        </div>
+      </div>
+
+      <div class="svcd-card">
+        <div class="svcd-card-icon"><i class="fa fa-cart-shopping"></i></div>
+        <div class="svcd-card-body">
+          <h3>E-commerce</h3>
+          <p>Negozi online su misura o basati su WooCommerce/Prestashop, ottimizzati per le conversioni con checkout fluido, pagamenti sicuri e gestione ordini.</p>
+          <ul class="svcd-tags"><li>WooCommerce</li><li>Prestashop</li><li>Stripe</li><li>PayPal</li></ul>
+        </div>
+      </div>
+
+      <div class="svcd-card">
+        <div class="svcd-card-icon"><i class="fa fa-plug"></i></div>
+        <div class="svcd-card-body">
+          <h3>API REST</h3>
+          <p>Progettazione e sviluppo di API RESTful documentate, sicure e scalabili. Integro servizi di terze parti e costruisco backend per app mobile e SPA.</p>
+          <ul class="svcd-tags"><li>REST</li><li>JSON</li><li>JWT</li><li>OAuth</li></ul>
+        </div>
+      </div>
+
+      <div class="svcd-card">
+        <div class="svcd-card-icon"><i class="fa fa-gears"></i></div>
+        <div class="svcd-card-body">
+          <h3>ERP &amp; CRM</h3>
+          <p>Sistemi gestionali personalizzati per automatizzare processi aziendali: gestione clienti, fatturazione, magazzino e reportistica avanzata.</p>
+          <ul class="svcd-tags"><li>Dashboard</li><li>Reporting</li><li>Automazione</li><li>MySQL</li></ul>
+        </div>
+      </div>
+
+      <div class="svcd-card">
+        <div class="svcd-card-icon"><i class="fa fa-magnifying-glass-chart"></i></div>
+        <div class="svcd-card-body">
+          <h3>SEO &amp; Performance</h3>
+          <p>Ottimizzazione tecnica on-page e off-page per scalare le SERP. Core Web Vitals, velocità di caricamento, structured data e analisi della concorrenza.</p>
+          <ul class="svcd-tags"><li>Core Web Vitals</li><li>Schema.org</li><li>GTM</li><li>Analytics</li></ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="svcd-cta">
+      <a href="servizi.php" class="svcd-btn-main"><i class="fa fa-arrow-right"></i> Scopri tutti i servizi</a>
+      <a href="contatti.php" class="svcd-btn-ghost"><i class="far fa-envelope"></i> Parliamo del tuo progetto</a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ══ LE MIE APP (Ludoteca) ════════════════════════════════ -->
+  <section class="appsbox-section page-section" id="le-mie-app">
+    <style>
+    /* Promo app/prodotti (scoped .appsbox-*) — slim, senza card di sfondo */
+    .appsbox-section { padding: clamp(.5rem,2vw,1.5rem) clamp(1.25rem,5vw,3rem) clamp(3rem,5vw,4.5rem); }
+    .appsbox-card { max-width: 1100px; margin: 0 auto; }
+    .appsbox-head { text-align: center; max-width: 600px; margin: 0 auto clamp(1.2rem,3vw,1.8rem); }
+    .appsbox-badge {
+      display: inline-flex; align-items: center; gap: .45rem;
+      padding: .26rem .8rem; border-radius: 30px;
+      background: rgba(208,24,171,.1); border: 1px solid rgba(208,24,171,.28);
+      font-size: .66rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: #e066cc; margin-bottom: .85rem;
+    }
+    .appsbox-title { font-size: clamp(1.35rem,3vw,1.8rem); font-weight: 700; letter-spacing: -.025em; color: #f7f4ff; margin: 0 0 .45rem; line-height: 1.15; }
+    .appsbox-sub { font-size: .85rem; color: rgba(255,255,255,.55); margin: 0; line-height: 1.65; }
+    .appsbox-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .appsbox-app {
+      display: flex; gap: 1rem; align-items: flex-start;
+      background: rgba(255,255,255,.035); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,.09); border-radius: 16px; padding: 1.1rem 1.3rem;
+      transition: border-color .3s, transform .3s, box-shadow .3s;
+    }
+    .appsbox-app:hover { border-color: rgba(208,24,171,.35); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(208,24,171,.12), 0 2px 10px rgba(0,0,0,.35); }
+    .appsbox-app-icon {
+      width: 46px; height: 46px; border-radius: 12px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(208,24,171,.1); border: 1px solid rgba(208,24,171,.24); color: #d018ab; font-size: 1.2rem;
+    }
+    .appsbox-app-body { flex: 1; min-width: 0; }
+    .appsbox-app-top { display: flex; align-items: center; gap: .55rem; flex-wrap: wrap; margin-bottom: .4rem; }
+    .appsbox-app-top h3 { font-size: 1.05rem; font-weight: 700; color: #f7f4ff; margin: 0; letter-spacing: -.01em; }
+    .appsbox-tag { font-size: .6rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: .18rem .55rem; border-radius: 20px; }
+    .appsbox-tag--free { color: #d018ab; background: rgba(208,24,171,.1); border: 1px solid rgba(208,24,171,.26); }
+    .appsbox-tag--pro { color: #86efac; background: rgba(74,222,128,.1); border: 1px solid rgba(74,222,128,.26); }
+    .appsbox-app-body p { font-size: .8rem; line-height: 1.65; color: rgba(255,255,255,.55); margin: 0 0 .7rem; }
+    .appsbox-link { display: inline-flex; align-items: center; gap: .4rem; font-size: .78rem; font-weight: 600; color: #e066cc; transition: gap .2s, color .2s; }
+    .appsbox-link:hover { gap: .65rem; color: #d018ab; }
+    .appsbox-link i { font-size: .7rem; }
+    .appsbox-foot { text-align: center; margin-top: clamp(1.2rem,3vw,1.8rem); }
+    .appsbox-allbtn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .6rem 1.3rem; border-radius: 40px;
+      border: 1px solid rgba(224,102,204,.32); color: #e066cc; background: rgba(208,24,171,.06);
+      font-size: .8rem; font-weight: 600; transition: .25s;
+    }
+    .appsbox-allbtn:hover { background: rgba(208,24,171,.14); border-color: #e066cc; transform: translateY(-2px); }
+    @media (max-width: 760px) { .appsbox-grid { grid-template-columns: 1fr; } }
+    </style>
+
+    <div class="appsbox-card">
+      <div class="appsbox-head">
+        <span class="appsbox-badge"><i class="fa fa-gamepad"></i> Ludoteca</span>
+        <h2 class="appsbox-title">Le mie app &amp; prodotti</h2>
+        <p class="appsbox-sub">App PWA gratuite e soluzioni pronte all'uso.</p>
+      </div>
+
+      <div class="appsbox-grid">
+
+        <article class="appsbox-app">
+          <div class="appsbox-app-icon"><i class="fa fa-tv"></i></div>
+          <div class="appsbox-app-body">
+            <div class="appsbox-app-top">
+              <h3>DF TV</h3>
+              <span class="appsbox-tag appsbox-tag--free">Gratuita</span>
+            </div>
+            <p>Canali TV italiani e internazionali in streaming live dal browser, con guida TV (EPG) integrata. Nessuna registrazione, zero costi.</p>
+            <a href="/tv/" class="appsbox-link">Apri l'app <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="appsbox-app">
+          <div class="appsbox-app-icon"><i class="fa fa-clapperboard"></i></div>
+          <div class="appsbox-app-body">
+            <div class="appsbox-app-top">
+              <h3>Fulgione+</h3>
+              <span class="appsbox-tag appsbox-tag--pro">&euro; 3.500</span>
+            </div>
+            <p>Software di streaming installabile in stile Netflix: avvii la tua piattaforma senza codice, gestisci utenti e contenuti, e rivendi il servizio.</p>
+            <a href="fulgione-plus.php" class="appsbox-link">Scopri di più <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="appsbox-foot">
+        <a href="ludoteca.php" class="appsbox-allbtn"><i class="fa fa-arrow-right"></i> Vai alla Ludoteca</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /sections-wrap -->
+
+<footer id="footer">
+  <div class="foot-grid">
+
+    <div class="foot-brand">
+      <a href="index.php" class="logo">
+        <span class="logo-photo-wrap"><img src="assets/img/davide.jpg" alt="Davide Fulgione" width="38" height="38"></span>
+        <div class="logo-copy">
+          <span class="logo-name">Davide Fulgione</span>
+          <span class="logo-role">Web Developer &amp; Divulgatore</span>
+        </div>
+      </a>
+      <p class="foot-desc">
+        Soluzioni web personalizzate per aziende e privati.
+        Dal sito vetrina all'applicazione enterprise, ogni progetto
+        nasce con cura e attenzione al dettaglio.
+      </p>
+      <div class="foot-social">
+        <a href="https://it.linkedin.com/in/davide-fulgione-7002b930b" class="soc" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61574595784227&locale=it_IT" class="soc" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+
+    <div class="foot-col">
+      <h4>Servizi</h4>
+      <ul class="foot-links">
+        <li><a href="servizi.php#design">Design &amp; UX</a></li>
+        <li><a href="servizi.php#sviluppo">Sviluppo Web</a></li>
+        <li><a href="servizi.php#ecommerce">E-commerce</a></li>
+        <li><a href="servizi.php#api">API REST</a></li>
+        <li><a href="servizi.php#pwa">App PWA</a></li>
+        <li><a href="servizi.php#crm">ERP &amp; CRM</a></li>
+        <li><a href="servizi.php#seo">SEO</a></li>
+      </ul>
+    </div>
+
+    <div class="foot-col">
+      <h4>Esplora</h4>
+      <ul class="foot-links">
+        <li><a href="servizi.php">Servizi</a></li>
+        <li><a href="portfolio.php">Portfolio</a></li>
+        <li><a href="blog.php">Blog</a></li>
+        <li><a href="news.php">News</a></li>
+        <li><a href="ludoteca.php">Ludoteca</a></li>
+        <li><a href="contatti.php">Contatti</a></li>
+      </ul>
+    </div>
+
+    <div class="foot-col">
+      <h4>Contatti</h4>
+      <ul class="foot-contacts">
+        <li><i class="fa fa-map-marker-alt"></i> Eboli (SA)</li>
+        <li><i class="fa fa-envelope"></i> <a href="mailto:info@davidefulgione.it">info@davidefulgione.it</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="foot-bar">
+    <p class="foot-copy">
+      &copy; 2026 <span>Davide Fulgione</span>.
+      Sviluppo Siti Web <span>Eboli</span> | Web Agency <span>Salerno</span>.
+      Tutti i diritti riservati.
+    </p>
+    <nav class="foot-legal">
+      <a href="privacy.php">Privacy</a>
+      <a href="cookie.php">Cookie</a>
+      <a href="termini.php">Termini</a>
+      <a href="admin/login.php" style="opacity:.45;font-size:.68rem;">Area Riservata</a>
+    </nav>
+  </div>
+</footer>
+
+<button id="gotop" aria-label="Torna su"><i class="fa fa-chevron-up"></i></button>
+
+<script>
+/* Navbar + scroll top */
+var navbar = document.getElementById('navbar');
+var gotop  = document.getElementById('gotop');
+window.addEventListener('scroll', function(){
+  var y = window.scrollY;
+  navbar.classList.toggle('solid', y > 50);
+  gotop.classList.toggle('on', y > 380);
+}, {passive:true});
+gotop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+/* Hamburger */
+var hbg = document.getElementById('hbg');
+var mob = document.getElementById('mobnav');
+hbg.addEventListener('click', function(){
+  var o = mob.classList.toggle('open');
+  hbg.classList.toggle('open', o);
+  hbg.setAttribute('aria-expanded', String(o));
+  document.body.style.overflow = o ? 'hidden' : '';
+});
+document.addEventListener('click', function(e){
+  if (!hbg.contains(e.target) && !mob.contains(e.target)){
+    mob.classList.remove('open');
+    hbg.classList.remove('open');
+    hbg.setAttribute('aria-expanded','false');
+    document.body.style.overflow = '';
+  }
+});
+</script>
+
+</body>
+</html>
+
+
+<!-- ══════════════════════════════════════════════
+     COOKIE BANNER — Davide Fulgione
+════════════════════════════════════════════════ -->
+<div id="cookie-banner" role="dialog" aria-modal="true" aria-labelledby="cb-title" aria-describedby="cb-desc">
+  <div class="cb-inner">
+
+    <div class="cb-top">
+      <div class="cb-icon" aria-hidden="true"><i class="fa fa-shield-halved"></i></div>
+      <div class="cb-text">
+        <p class="cb-title" id="cb-title">Questo sito utilizza cookie</p>
+        <p class="cb-desc" id="cb-desc">
+          Usiamo cookie tecnici (necessari al funzionamento) e cookie analitici tramite
+          <strong>Google Analytics</strong> per capire come viene utilizzato il sito.
+          Nessun cookie di profilazione o marketing.
+          <a href="cookie.php" class="cb-link">Informativa completa</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="cb-actions">
+      <button class="cb-btn cb-btn--reject" id="cb-reject">Solo necessari</button>
+      <button class="cb-btn cb-btn--accept" id="cb-accept">Accetta tutti</button>
+    </div>
+
+  </div>
+</div>
+
+<style>
+#cookie-banner {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(120%);
+  z-index: 9999;
+  width: min(92vw, 620px);
+  background: rgba(13, 8, 28, 0.92);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(208,24,171,.28);
+  border-radius: 18px;
+  box-shadow: 0 8px 48px rgba(0,0,0,.65), 0 1px 0 rgba(208,24,171,.15) inset;
+  padding: 1.4rem 1.6rem;
+  transition: transform .45s cubic-bezier(.22,1,.36,1), opacity .35s ease;
+  opacity: 0;
+  font-family: 'Inter', sans-serif;
+}
+#cookie-banner.cb-show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+#cookie-banner.cb-hide {
+  transform: translateX(-50%) translateY(130%);
+  opacity: 0;
+}
+.cb-inner { display: flex; flex-direction: column; gap: 1.1rem; }
+.cb-top   { display: flex; align-items: flex-start; gap: 1rem; }
+.cb-icon  {
+  flex-shrink: 0;
+  width: 38px; height: 38px; border-radius: 10px;
+  background: rgba(208,24,171,.12);
+  border: 1px solid rgba(208,24,171,.25);
+  display: flex; align-items: center; justify-content: center;
+  color: #d018ab; font-size: .95rem;
+}
+.cb-title {
+  font-size: .82rem; font-weight: 600;
+  color: #f5f2ff; margin: 0 0 .3rem;
+  letter-spacing: -.01em;
+}
+.cb-desc {
+  font-size: .74rem; font-weight: 300;
+  color: rgba(232,228,240,.65);
+  line-height: 1.65; margin: 0;
+}
+.cb-desc strong { font-weight: 500; color: rgba(232,228,240,.85); }
+.cb-link {
+  color: #d018ab; text-decoration: underline;
+  text-underline-offset: 2px; white-space: nowrap;
+}
+.cb-link:hover { color: #e066cc; }
+.cb-actions {
+  display: flex; gap: .65rem; justify-content: flex-end;
+}
+.cb-btn {
+  padding: .52rem 1.25rem; border-radius: 40px;
+  font-family: 'Inter', sans-serif;
+  font-size: .76rem; font-weight: 500; letter-spacing: .02em;
+  cursor: pointer; border: none; transition: .2s;
+  white-space: nowrap;
+}
+.cb-btn--reject {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.14);
+  color: rgba(232,228,240,.7);
+}
+.cb-btn--reject:hover {
+  background: rgba(255,255,255,.12);
+  color: #f5f2ff;
+}
+.cb-btn--accept {
+  background: linear-gradient(135deg, #d018ab, #8c0f70);
+  color: #fff;
+  box-shadow: 0 3px 14px rgba(208,24,171,.35);
+}
+.cb-btn--accept:hover { filter: brightness(1.1); transform: translateY(-1px); }
+
+@media (max-width: 480px) {
+  #cookie-banner { bottom: 1rem; padding: 1.1rem 1.1rem; border-radius: 14px; }
+  .cb-actions { flex-direction: column; }
+  .cb-btn { width: 100%; text-align: center; padding: .62rem 1rem; }
+  .cb-btn--accept { order: -1; }
+}
+</style>
+
+<script>
+(function(){
+  var banner  = document.getElementById('cookie-banner');
+  var btnAcc  = document.getElementById('cb-accept');
+  var btnRej  = document.getElementById('cb-reject');
+
+  // Mostra con leggero delay
+  setTimeout(function(){ banner.classList.add('cb-show'); }, 800);
+
+  function setCookie(name, value, days){
+    var d = new Date();
+    d.setTime(d.getTime() + days * 86400000);
+    document.cookie = name + '=' + value + ';expires=' + d.toUTCString() + ';path=/;SameSite=Lax';
+  }
+
+  function hideBanner(){
+    banner.classList.remove('cb-show');
+    banner.classList.add('cb-hide');
+    setTimeout(function(){ banner.remove(); }, 500);
+  }
+
+  // Accetta tutti — attiva GA
+  btnAcc.addEventListener('click', function(){
+    setCookie('df_cookie_consent', 'all', 365);
+    hideBanner();
+    // Sblocca Google Analytics
+    if (typeof gtag === 'function') {
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+    }
+  });
+
+  // Solo necessari — GA rimane bloccato
+  btnRej.addEventListener('click', function(){
+    setCookie('df_cookie_consent', 'necessary', 365);
+    hideBanner();
+    if (typeof gtag === 'function') {
+      gtag('consent', 'update', { analytics_storage: 'denied' });
+    }
+  });
+})();
+</script>
+<!-- ══════════════════════════════════════════════
+     PWA — Service Worker + Banner Android
+════════════════════════════════════════════════ -->
+
+<!-- Banner installazione Android -->
+<div id="pwa-banner" role="dialog" aria-modal="true" aria-label="Installa l'app" hidden>
+  <div class="pwa-banner-inner">
+    <img class="pwa-banner-icon" src="/assets/icons/icon-72x72.png" alt="DF Developer" width="48" height="48">
+    <div class="pwa-banner-text">
+      <strong>DF Developer</strong>
+      <span>Installa il sito come app sul tuo telefono</span>
+    </div>
+    <div class="pwa-banner-actions">
+      <button class="pwa-btn pwa-btn--dismiss" id="pwa-dismiss" aria-label="Chiudi">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <button class="pwa-btn pwa-btn--install" id="pwa-install">
+        Installa <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+#pwa-banner {
+  position: fixed;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(140%);
+  z-index: 9990;
+  width: min(94vw, 480px);
+  background: rgba(13, 8, 28, 0.96);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(208,24,171,.3);
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0,0,0,.7), 0 1px 0 rgba(208,24,171,.15) inset;
+  padding: .9rem 1.1rem;
+  transition: transform .45s cubic-bezier(.22,1,.36,1), opacity .35s ease;
+  opacity: 0;
+  font-family: 'Inter', sans-serif;
+}
+#pwa-banner:not([hidden]) { display: block; }
+#pwa-banner.pwa-show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+#pwa-banner.pwa-hide {
+  transform: translateX(-50%) translateY(140%);
+  opacity: 0;
+}
+.pwa-banner-inner {
+  display: flex; align-items: center; gap: .85rem;
+}
+.pwa-banner-icon {
+  width: 48px; height: 48px; border-radius: 12px;
+  flex-shrink: 0;
+  border: 1px solid rgba(208,24,171,.2);
+  object-fit: cover;
+}
+.pwa-banner-text {
+  flex: 1; min-width: 0;
+  display: flex; flex-direction: column; gap: .12rem;
+}
+.pwa-banner-text strong {
+  font-size: .82rem; font-weight: 600; color: #f7f4ff;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.pwa-banner-text span {
+  font-size: .71rem; font-weight: 300;
+  color: rgba(232,228,240,.5);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.pwa-banner-actions {
+  display: flex; align-items: center; gap: .5rem; flex-shrink: 0;
+}
+.pwa-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: .35rem; border: none; cursor: pointer;
+  font-family: 'Inter', sans-serif; transition: .2s;
+  border-radius: 40px;
+}
+.pwa-btn--dismiss {
+  width: 30px; height: 30px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12) !important;
+  color: rgba(232,228,240,.5);
+  border-radius: 50% !important;
+}
+.pwa-btn--dismiss:hover { background: rgba(255,255,255,.14); color: #f7f4ff; }
+.pwa-btn--install {
+  padding: .45rem 1rem;
+  background: linear-gradient(135deg, #d018ab, #8c0f70);
+  color: #fff; font-size: .74rem; font-weight: 500;
+  box-shadow: 0 3px 12px rgba(208,24,171,.4);
+}
+.pwa-btn--install:hover { filter: brightness(1.1); transform: translateY(-1px); }
+
+@media (max-width: 400px) {
+  #pwa-banner { padding: .8rem .9rem; }
+  .pwa-banner-text span { display: none; }
+}
+</style>
+
+<script>
+(function(){
+  'use strict';
+
+  // ── Registra Service Worker ──────────────────────
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function(){
+      navigator.serviceWorker.register('/sw.js', { scope: '/' })
+        .catch(function(err){ console.warn('SW registration failed:', err); });
+    });
+  }
+
+  // ── Banner installazione Android ─────────────────
+  var banner      = document.getElementById('pwa-banner');
+  var btnInstall  = document.getElementById('pwa-install');
+  var btnDismiss  = document.getElementById('pwa-dismiss');
+  var deferredEvt = null;
+
+  // Non mostrare se già dismissato nelle ultime 2 settimane
+  var dismissed = localStorage.getItem('pwa_banner_dismissed');
+  if (dismissed && Date.now() - parseInt(dismissed) < 14 * 86400000) return;
+
+  // Cattura evento beforeinstallprompt (solo Android/Chrome)
+  window.addEventListener('beforeinstallprompt', function(e){
+    e.preventDefault();
+    deferredEvt = e;
+    banner.removeAttribute('hidden');
+    setTimeout(function(){
+      banner.classList.add('pwa-show');
+    }, 3000); // compare dopo 3 secondi
+  });
+
+  // Nascondi se già installata
+  window.addEventListener('appinstalled', function(){
+    hideBanner();
+    localStorage.setItem('pwa_banner_dismissed', Date.now().toString());
+  });
+
+  function hideBanner(){
+    banner.classList.remove('pwa-show');
+    banner.classList.add('pwa-hide');
+    setTimeout(function(){ banner.setAttribute('hidden', ''); }, 500);
+  }
+
+  btnInstall.addEventListener('click', function(){
+    if (!deferredEvt) return;
+    deferredEvt.prompt();
+    deferredEvt.userChoice.then(function(choice){
+      deferredEvt = null;
+      hideBanner();
+      if (choice.outcome === 'accepted') {
+        localStorage.setItem('pwa_banner_dismissed', Date.now().toString());
+      }
+    });
+  });
+
+  btnDismiss.addEventListener('click', function(){
+    hideBanner();
+    localStorage.setItem('pwa_banner_dismissed', Date.now().toString());
+  });
+
+})();
+</script>
