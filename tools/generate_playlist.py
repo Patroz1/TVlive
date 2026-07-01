@@ -9,6 +9,9 @@ from common import (
 )
 
 
+GITHUB_RAW_BASE_URL = "https://raw.githubusercontent.com/Patroz1/TVlive/main/"
+
+
 WLTV_DISCOVERY_CHANNELS = {
     "NOVE": "Nove",
     "Nove": "Nove",
@@ -114,10 +117,20 @@ def sort_key(item):
     return group, lcn, name.lower()
 
 
+def build_logo_url(logo_path):
+    if not logo_path:
+        return ""
+
+    if logo_path.startswith("http://") or logo_path.startswith("https://"):
+        return logo_path
+
+    return GITHUB_RAW_BASE_URL + logo_path.lstrip("/")
+
+
 def build_extinf(name, data):
     tvg_id = data.get("epg") or name
     tvg_name = name
-    tvg_logo = data.get("logo") or ""
+    tvg_logo = build_logo_url(data.get("logo") or "")
     group = data.get("group") or "99 | Archivio"
     lcn = data.get("lcn")
 
