@@ -10,6 +10,7 @@ from common import (
 
 
 GITHUB_RAW_BASE_URL = "https://raw.githubusercontent.com/Patroz1/TVlive/main/"
+EPG_URL = GITHUB_RAW_BASE_URL + "epg/epg.xml.gz"
 
 
 WLTV_DISCOVERY_CHANNELS = {
@@ -164,7 +165,8 @@ def generate_playlist():
     catalog = read_json(CATALOG_JSON)
     source_blocks = parse_source_blocks(source_lines)
 
-    output_lines = ["#EXTM3U"]
+    output_lines = [f'#EXTM3U x-tvg-url="{EPG_URL}"']
+
     stats = {
         "catalog_channels": len(catalog),
         "written_channels": 0,
@@ -236,6 +238,7 @@ def main():
     write_text(OUTPUT_PLAYLIST, playlist)
 
     print(f"Playlist creata: {OUTPUT_PLAYLIST.relative_to(OUTPUT_PLAYLIST.parents[1])}")
+    print(f"EPG collegato: {EPG_URL}")
     print(f"Canali nel catalogo: {stats['catalog_channels']}")
     print(f"Canali scritti in playlist: {stats['written_channels']}")
     print(f"Canali riproducibili: {len(stats['playable_channels'])}")
