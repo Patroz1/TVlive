@@ -21,6 +21,14 @@ GROUPS = {
 }
 
 
+EXCLUDED_CHANNELS = {
+    "Elisa Di Rivombrosa",
+    "GF Regia 1",
+    "GF Regia 2",
+    "GF Un'ora fa",
+}
+
+
 KNOWN_CHANNELS = {
     "Rai 1": ("Rai", GROUPS["NAZIONALI"], 1, "Rai1.it", "logos/rai/rai-1.png"),
     "Rai 2": ("Rai", GROUPS["NAZIONALI"], 2, "Rai2.it", "logos/rai/rai-2.png"),
@@ -190,9 +198,6 @@ def classify_channel(source_name: str, channel_data: dict) -> tuple[str, dict, b
     }:
         return canonical_name, make_fast_item(canonical_name, "FAST", channel_data), True
 
-    if upper_name.startswith("GF "):
-        return canonical_name, make_review_item(canonical_name, channel_data), False
-
     return canonical_name, make_review_item(canonical_name, channel_data), False
 
 
@@ -201,10 +206,17 @@ def main() -> None:
 
     catalog = {}
     unknown = []
+    excluded = []
     recognized = 0
 
     for source_name in sorted(channels.keys(), key=str.lower):
         channel_data = channels[source_name]
+        canonical_name = ALIASES.get(source_name, source_name)
+
+        if canonical_name in EXCLUDED_CHANNELS:
+            excluded.append(canonical_name)
+            continue
+
         canonical_name, item, is_recognized = classify_channel(source_name, channel_data)
 
         catalog[canonical_name] = item
@@ -219,7 +231,14 @@ def main() -> None:
     print(f"Catalogo creato: {CATALOG_JSON.relative_to(CATALOG_JSON.parents[1])}")
     print(f"Canali nel catalogo: {len(catalog)}")
     print(f"Canali riconosciuti automaticamente: {recognized}")
+    print(f"Canali esclusi: {len(excluded)}")
     print(f"Canali da revisionare: {len(unknown)}")
+
+    if excluded:
+        print()
+        print("Esclusi:")
+        for name in excluded:
+            print(f"- {name}")
 
     if unknown:
         print()

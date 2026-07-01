@@ -339,23 +339,6 @@
       "duplicates_in_source": 1
     }
   },
-  "Elisa Di Rivombrosa": {
-    "aliases": [
-      "Elisa Di Rivombrosa"
-    ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
-    "country": "IT",
-    "type": "tv",
-    "enabled": true,
-    "source": {
-      "tvg_name": "Elisa Di Rivombrosa",
-      "duplicates_in_source": 1
-    }
-  },
   "Focus": {
     "aliases": [
       "Focus"
@@ -422,57 +405,6 @@
     "source": {
       "tvg_name": "Gambero Rosso",
       "duplicates_in_source": 2
-    }
-  },
-  "GF Regia 1": {
-    "aliases": [
-      "GF Regia 1"
-    ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
-    "country": "IT",
-    "type": "tv",
-    "enabled": true,
-    "source": {
-      "tvg_name": "GF Regia 1",
-      "duplicates_in_source": 1
-    }
-  },
-  "GF Regia 2": {
-    "aliases": [
-      "GF Regia 2"
-    ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
-    "country": "IT",
-    "type": "tv",
-    "enabled": true,
-    "source": {
-      "tvg_name": "GF Regia 2",
-      "duplicates_in_source": 1
-    }
-  },
-  "GF Un'ora fa": {
-    "aliases": [
-      "GF Un'ora fa"
-    ],
-    "provider": "",
-    "group": "90 | Da revisionare",
-    "lcn": null,
-    "epg": "",
-    "logo": "",
-    "country": "IT",
-    "type": "tv",
-    "enabled": true,
-    "source": {
-      "tvg_name": "GF Un'ora fa",
-      "duplicates_in_source": 1
     }
   },
   "Giallo": {

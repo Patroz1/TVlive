@@ -254,16 +254,3 @@ https://viamotionhsi.netplus.ch/live/eds/la7d/browser-HLS8/la7d.m3u8
 #EXTINF:-1 tvg-id="Western Time" tvg-name="Western Time" tvg-logo="https://raw.githubusercontent.com/Patroz1/TVlive/main/logos/fast/western-time.png" group-title="12 | FAST",Western Time
 #EXTVLCOPT:http-user-agent=HbbTV/1.6.1
 #https://amg02512-amg02512c8-lg-it-8917.playouts.now.amagi.tv/playlist/amg02512-nexodigital-westerntime-lgit/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]
-
-#EXTINF:-1 tvg-id="Elisa Di Rivombrosa" tvg-name="Elisa Di Rivombrosa" group-title="90 | Da revisionare",Elisa Di Rivombrosa
-#EXTVLCOPT:http-user-agent=HbbTV/1.6.1
-#https://amg02512-amg02512c4-lg-it-8918.playouts.now.amagi.tv/playlist/amg02512-nexodigital-topserie-lgit/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]
-
-#EXTINF:-1 tvg-id="GF Regia 1" tvg-name="GF Regia 1" group-title="90 | Da revisionare",GF Regia 1
-https://live02-seg.msf.cdn.mediaset.net/live/ch-b7/b7-clr.isml/index.m3u8
-
-#EXTINF:-1 tvg-id="GF Regia 2" tvg-name="GF Regia 2" group-title="90 | Da revisionare",GF Regia 2
-https://live02-seg.msf.cdn.mediaset.net/live/ch-b8/b8-clr.isml/index.m3u8
-
-#EXTINF:-1 tvg-id="GF Un'ora fa" tvg-name="GF Un'ora fa" group-title="90 | Da revisionare",GF Un'ora fa
-https://live02-seg.msf.cdn.mediaset.net/live/ch-b9/b9-clr.isml/index.m3u8
