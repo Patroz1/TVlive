@@ -1,0 +1,32 @@
+name: Build playlist
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run build
+        run: python3 build.py
+
+      - name: Commit updated playlist
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update generated playlist
+          file_pattern: playlist/live-it.m3u output/live-it.m3u database/*.json
