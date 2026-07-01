@@ -42,20 +42,19 @@ def parse_source_blocks(lines):
     return blocks
 
 
+def is_playable_line(line):
+    stripped = line.strip()
+
+    return (
+        stripped.startswith("http://")
+        or stripped.startswith("https://")
+        or stripped.startswith("plugin://")
+    )
+
+
 def has_playable_line(block):
     for line in block[1:]:
-        stripped = line.strip()
-
-        if not stripped:
-            continue
-
-        if stripped == "--":
-            continue
-
-        if stripped.startswith("http://") or stripped.startswith("https://"):
-            return True
-
-        if stripped.startswith("plugin://"):
+        if is_playable_line(line):
             return True
 
     return False
@@ -132,6 +131,8 @@ def generate_playlist():
     stats = {
         "catalog_channels": len(catalog),
         "written_channels": 0,
+        "playable_channels": [],
+        "not_playable_channels": [],
         "missing_source": [],
         "disabled": [],
         "without_playable_url": [],
@@ -154,10 +155,14 @@ def generate_playlist():
 
         if not source_block:
             stats["missing_source"].append(name)
+            stats["not_playable_channels"].append(name)
             continue
 
-        if not has_playable_line(source_block):
+        if has_playable_line(source_block):
+            stats["playable_channels"].append(name)
+        else:
             stats["without_playable_url"].append(name)
+            stats["not_playable_channels"].append(name)
 
         output_lines.append("")
         output_lines.append(build_extinf(name, data))
@@ -185,6 +190,8 @@ def main():
     print(f"Playlist creata: {OUTPUT_PLAYLIST.relative_to(OUTPUT_PLAYLIST.parents[1])}")
     print(f"Canali nel catalogo: {stats['catalog_channels']}")
     print(f"Canali scritti in playlist: {stats['written_channels']}")
+    print(f"Canali riproducibili: {len(stats['playable_channels'])}")
+    print(f"Canali non riproducibili: {len(stats['not_playable_channels'])}")
     print(f"Canali disabilitati: {len(stats['disabled'])}")
     print(f"Canali senza sorgente: {len(stats['missing_source'])}")
     print(f"Canali senza URL attivo: {len(stats['without_playable_url'])}")
