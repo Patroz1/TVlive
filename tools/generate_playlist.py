@@ -54,6 +54,7 @@ WLTV_CHANNELS = {
     "HGTV": ("discovery", "HGTV"),
     "HGTV - Home&Garden": ("discovery", "HGTV"),
     "Food Network": ("discovery", "FoodNetwork"),
+    "LA7 Cinema": ("la7", "La7c"),
 }
 
 
