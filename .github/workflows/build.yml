@@ -2,9 +2,6 @@ name: Build playlist
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 jobs:
   build:
