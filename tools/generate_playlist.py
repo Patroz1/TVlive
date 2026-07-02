@@ -42,6 +42,11 @@ EPG_ID_OVERRIDES = {
 }
 
 
+DIRECT_CHANNEL_URLS = {
+    "LA7 Cinema": "https://stream.la7.it/out/v1/fe849af8150c4c51889b15dadc717774/index.m3u8",
+}
+
+
 WLTV_CHANNELS = {
     "NOVE": ("discovery", "Nove"),
     "Nove": ("discovery", "Nove"),
@@ -54,7 +59,6 @@ WLTV_CHANNELS = {
     "HGTV": ("discovery", "HGTV"),
     "HGTV - Home&Garden": ("discovery", "HGTV"),
     "Food Network": ("discovery", "FoodNetwork"),
-    "LA7 Cinema": ("la7", "La7c"),
 }
 
 
@@ -186,6 +190,14 @@ def build_extinf(name, data):
     return "#EXTINF:-1 " + " ".join(attributes) + "," + name
 
 
+def is_direct_channel(name):
+    return name in DIRECT_CHANNEL_URLS
+
+
+def build_direct_url(name):
+    return DIRECT_CHANNEL_URLS[name]
+
+
 def is_wltv_channel(name):
     return name in WLTV_CHANNELS
 
@@ -210,12 +222,23 @@ def generate_playlist():
         "missing_source": [],
         "disabled": [],
         "without_playable_url": [],
+        "direct_channels": [],
         "wltv_channels": [],
     }
 
     for name, data in sorted(catalog.items(), key=sort_key):
         if not data.get("enabled", True):
             stats["disabled"].append(name)
+            continue
+
+        if is_direct_channel(name):
+            output_lines.append("")
+            output_lines.append(build_extinf(name, data))
+            output_lines.append(build_direct_url(name))
+
+            stats["written_channels"] += 1
+            stats["playable_channels"].append(name)
+            stats["direct_channels"].append(name)
             continue
 
         if is_wltv_channel(name):
@@ -281,8 +304,10 @@ def main():
     print(f"Canali disabilitati: {len(stats['disabled'])}")
     print(f"Canali senza sorgente: {len(stats['missing_source'])}")
     print(f"Canali senza URL attivo: {len(stats['without_playable_url'])}")
+    print(f"Canali diretti: {len(stats['direct_channels'])}")
     print(f"Canali via WLTV: {len(stats['wltv_channels'])}")
 
+    print_list("Canali diretti:", stats["direct_channels"])
     print_list("Canali via WLTV:", stats["wltv_channels"])
     print_list("Senza sorgente:", stats["missing_source"])
     print_list("Senza URL attivo:", stats["without_playable_url"])
