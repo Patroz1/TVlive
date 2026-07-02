@@ -18,6 +18,7 @@ EPG_ID_OVERRIDES = {
     "Cielo.it": "cielo.it",
     "SkyTG24.it": "Sky.TG24.it",
     "La7.it": "LA7.HD.it",
+    "La7Cinema.it": "LA7Cinema.it",
     "La5.it": "La.5.it",
     "TwentySeven.it": "27.Twentyseven.it",
     "GamberoRosso.it": "Gambero.Rosso.HD.it",
@@ -41,18 +42,19 @@ EPG_ID_OVERRIDES = {
 }
 
 
-WLTV_DISCOVERY_CHANNELS = {
-    "NOVE": "Nove",
-    "Nove": "Nove",
-    "Real Time": "RealTime",
-    "Discovery Channel": "Discovery",
-    "DMAX": "DMAX",
-    "Giallo": "Giallo",
-    "Discovery Turbo": "Turbo",
-    "Motor Trend": "Turbo",
-    "HGTV": "HGTV",
-    "HGTV - Home&Garden": "HGTV",
-    "Food Network": "FoodNetwork",
+WLTV_CHANNELS = {
+    "NOVE": ("discovery", "Nove"),
+    "Nove": ("discovery", "Nove"),
+    "Real Time": ("discovery", "RealTime"),
+    "Discovery Channel": ("discovery", "Discovery"),
+    "DMAX": ("discovery", "DMAX"),
+    "Giallo": ("discovery", "Giallo"),
+    "Discovery Turbo": ("discovery", "Turbo"),
+    "Motor Trend": ("discovery", "Turbo"),
+    "HGTV": ("discovery", "HGTV"),
+    "HGTV - Home&Garden": ("discovery", "HGTV"),
+    "Food Network": ("discovery", "FoodNetwork"),
+    "LA7 Cinema": ("la7", "La7Cinema"),
 }
 
 
@@ -184,13 +186,13 @@ def build_extinf(name, data):
     return "#EXTINF:-1 " + " ".join(attributes) + "," + name
 
 
-def is_wltv_discovery_channel(name):
-    return name in WLTV_DISCOVERY_CHANNELS
+def is_wltv_channel(name):
+    return name in WLTV_CHANNELS
 
 
-def build_wltv_discovery_url(name):
-    channel = WLTV_DISCOVERY_CHANNELS[name]
-    return f"plugin://plugin.video.wltvhelper/play/discovery/{channel}"
+def build_wltv_url(name):
+    category, channel = WLTV_CHANNELS[name]
+    return f"plugin://plugin.video.wltvhelper/play/{category}/{channel}"
 
 
 def generate_playlist():
@@ -208,7 +210,7 @@ def generate_playlist():
         "missing_source": [],
         "disabled": [],
         "without_playable_url": [],
-        "wltv_discovery_channels": [],
+        "wltv_channels": [],
     }
 
     for name, data in sorted(catalog.items(), key=sort_key):
@@ -216,14 +218,14 @@ def generate_playlist():
             stats["disabled"].append(name)
             continue
 
-        if is_wltv_discovery_channel(name):
+        if is_wltv_channel(name):
             output_lines.append("")
             output_lines.append(build_extinf(name, data))
-            output_lines.append(build_wltv_discovery_url(name))
+            output_lines.append(build_wltv_url(name))
 
             stats["written_channels"] += 1
             stats["playable_channels"].append(name)
-            stats["wltv_discovery_channels"].append(name)
+            stats["wltv_channels"].append(name)
             continue
 
         aliases = data.get("aliases", [])
@@ -279,9 +281,9 @@ def main():
     print(f"Canali disabilitati: {len(stats['disabled'])}")
     print(f"Canali senza sorgente: {len(stats['missing_source'])}")
     print(f"Canali senza URL attivo: {len(stats['without_playable_url'])}")
-    print(f"Canali Discovery via WLTV: {len(stats['wltv_discovery_channels'])}")
+    print(f"Canali via WLTV: {len(stats['wltv_channels'])}")
 
-    print_list("Discovery via WLTV:", stats["wltv_discovery_channels"])
+    print_list("Canali via WLTV:", stats["wltv_channels"])
     print_list("Senza sorgente:", stats["missing_source"])
     print_list("Senza URL attivo:", stats["without_playable_url"])
 
