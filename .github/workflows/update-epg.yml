@@ -1,10 +1,6 @@
 name: Update EPG
 
 "on":
-  push:
-    paths:
-      - ".github/workflows/update-epg.yml"
-
   schedule:
     - cron: "0 5 * * *"
 
