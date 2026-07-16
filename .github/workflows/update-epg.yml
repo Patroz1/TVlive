@@ -1,0 +1,43 @@
+name: Update EPG
+
+on:
+  schedule:
+    # Ogni giorno alle 05:00 UTC, cioè:
+    # 06:00 in Italia con ora solare
+    # 07:00 in Italia con ora legale
+    - cron: "0 5 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-epg:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run TVlive build
+        run: python3 build.py
+
+      - name: Commit updated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add epg/epg.xml epg/epg.xml.gz epg/source.xml.gz output/live-it.m3u playlist/live-it.m3u
+
+          if git diff --cached --quiet; then
+            echo "Nessun aggiornamento da pubblicare."
+          else
+            git commit -m "Automatic EPG update"
+            git push
+          fi
