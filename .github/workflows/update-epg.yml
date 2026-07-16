@@ -1,13 +1,14 @@
 name: Update EPG
 
-on:
+"on":
+  push:
+    paths:
+      - ".github/workflows/update-epg.yml"
+
   schedule:
-    # Ogni giorno alle 05:00 UTC, cioè:
-    # 06:00 in Italia con ora solare
-    # 07:00 in Italia con ora legale
     - cron: "0 5 * * *"
 
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -33,7 +34,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add epg/epg.xml epg/epg.xml.gz epg/source.xml.gz output/live-it.m3u playlist/live-it.m3u
+          git add \
+            epg/epg.xml \
+            epg/epg.xml.gz \
+            epg/source.xml.gz \
+            output/live-it.m3u \
+            playlist/live-it.m3u
 
           if git diff --cached --quiet; then
             echo "Nessun aggiornamento da pubblicare."
