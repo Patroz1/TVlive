@@ -37,7 +37,6 @@ jobs:
           git add \
             epg/epg.xml \
             epg/epg.xml.gz \
-            epg/source.xml.gz \
             output/live-it.m3u \
             playlist/live-it.m3u
 
